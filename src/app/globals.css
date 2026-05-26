@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme inline {
+  --breakpoint-xs: 30rem;
+  --color-primary: #4a1942;
+  --color-accent: #c9a84c;
+  --color-section-alt: #faf8fb;
+  --color-border: #e8e0ec;
+  --color-heading: #4a1942;
+  --color-body: #374151;
+  --font-sans: var(--font-inter);
+  --radius-card: 8px;
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-body font-sans;
+  }
+}
+
+@layer utilities {
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .prose-content p + p {
+    @apply mt-4;
+  }
+
+  .prose-content h2 {
+    @apply mt-10 text-xl font-bold text-heading;
+  }
+
+  .prose-content h3 {
+    @apply mt-8 text-lg font-semibold text-heading;
+  }
+
+  .prose-content ul {
+    @apply mt-4 list-disc space-y-2 pl-6 text-body;
+  }
+
+  .prose-content ol {
+    @apply mt-4 list-decimal space-y-2 pl-6 text-body;
+  }
+
+  .prose-content a {
+    @apply text-primary underline underline-offset-2 hover:text-accent;
+  }
+
+  .prose-content table {
+    @apply mt-6 w-full border-collapse text-sm;
+  }
+
+  .prose-content th {
+    @apply border border-border bg-section-alt px-3 py-2 text-left font-semibold text-heading;
+  }
+
+  .prose-content td {
+    @apply border border-border px-3 py-2 text-body;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(calc(100% + 1rem));
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
