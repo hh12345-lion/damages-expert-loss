@@ -48,7 +48,7 @@ export default function FeesPage() {
         <div className="prose-content mx-auto max-w-3xl">
           <p>
             Damages expert witness fees vary by discipline, seniority, claim complexity,
-            and forum. Figures below are indicative UK market ranges for 2025 — confirm
+            and forum. Figures below are indicative UK market ranges for 2025  -  confirm
             rates in writing before work commences. We do not operate contingency fees;
             experts charge on time spent or agreed fixed fees. See{" "}
             <Link href="/how-to-instruct">how to instruct</Link> for letter of
@@ -62,11 +62,11 @@ export default function FeesPage() {
           </p>
           <ul>
             <li>
-              <strong>£150–£300 per hour</strong> — general PI quantum (associate to
+              <strong>£150–£300 per hour</strong>  -  general PI quantum (associate to
               mid-level forensic accountant)
             </li>
             <li>
-              <strong>£250–£450 per hour</strong> — senior specialist or FCA with APIL
+              <strong>£250–£450 per hour</strong>  -  senior specialist or FCA with APIL
               accreditation and High Court experience
             </li>
             <li>
@@ -99,10 +99,10 @@ export default function FeesPage() {
           </p>
           <ul>
             <li>
-              <strong>£250–£500 per hour</strong> — general commercial quantum
+              <strong>£250–£500 per hour</strong>  -  general commercial quantum
             </li>
             <li>
-              <strong>£450–£700 per hour</strong> — senior specialist for High Court and
+              <strong>£450–£700 per hour</strong>  -  senior specialist for High Court and
               complex multi-year counterfactual models
             </li>
             <li>
@@ -129,7 +129,7 @@ export default function FeesPage() {
           </p>
           <ul>
             <li>
-              <strong>£500–£1,000+ per hour</strong> — senior arbitration quantum expert
+              <strong>£500–£1,000+ per hour</strong>  -  senior arbitration quantum expert
             </li>
             <li>
               <strong>Major arbitration engagement:</strong> £50,000–£500,000+ for
@@ -159,21 +159,21 @@ export default function FeesPage() {
           </p>
           <ul>
             <li>
-              <strong>Hourly rates</strong> — time recorded against agreed rate card;
+              <strong>Hourly rates</strong>  -  time recorded against agreed rate card;
               most flexible for evolving scope
             </li>
             <li>
-              <strong>Fixed fee</strong> — for defined deliverables (e.g. initial Schedule
+              <strong>Fixed fee</strong>  -  for defined deliverables (e.g. initial Schedule
               of Loss to trial window)
             </li>
             <li>
-              <strong>Retainer</strong> — advance payment against future time in
+              <strong>Retainer</strong>  -  advance payment against future time in
               long-running arbitration
             </li>
           </ul>
           <p>
             <strong>Contingency and success fees are not permitted</strong> for expert
-            witnesses under CPR Part 35 — the expert must remain independent. In family
+            witnesses under CPR Part 35  -  the expert must remain independent. In family
             proceedings under FPR Part 25, court permission may be required for expert
             evidence and advance approval of fees.
           </p>

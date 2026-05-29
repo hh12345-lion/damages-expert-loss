@@ -5,7 +5,7 @@ import { useCookieConsent } from "./CookieConsentContext";
 import { CookiePreferencesPanel } from "./CookiePreferencesPanel";
 
 /**
- * Compact bottom card — fixed positioning only, no document flow impact (no CLS).
+ * Compact bottom card  -  fixed positioning only, no document flow impact (no CLS).
  */
 export function CookieBanner() {
   const {

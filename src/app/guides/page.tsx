@@ -11,7 +11,7 @@ export const metadata = createMetadata({
   title:
     "Solicitor Guides: Damages Expert Witnesses UK | Quantum & Loss Assessment",
   description:
-    "In-depth guides for UK solicitors on damages expert witnesses — loss of earnings, clinical negligence quantum, commercial damages, and international arbitration.",
+    "In-depth guides for UK solicitors on damages expert witnesses  -  loss of earnings, clinical negligence quantum, commercial damages, and international arbitration.",
   path: "/guides",
 });
 

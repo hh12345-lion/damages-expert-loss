@@ -11,7 +11,7 @@ const PATH = "/privacy";
 export const metadata = createMetadata({
   title: "Privacy Policy | DamagesExpertWitness.co.uk",
   description:
-    "Privacy policy for DamagesExpertWitness.co.uk — how we collect, use, and protect personal data under UK GDPR.",
+    "Privacy policy for DamagesExpertWitness.co.uk  -  how we collect, use, and protect personal data under UK GDPR.",
   path: PATH,
   noindex: true,
 });
@@ -61,21 +61,21 @@ export default function PrivacyPage() {
           <p>We may collect the following categories of personal data:</p>
           <ul>
             <li>
-              <strong>Identity and contact data</strong> — name, firm name, job title,
+              <strong>Identity and contact data</strong>  -  name, firm name, job title,
               email address, telephone number, and postal address when you submit our
               contact or instruction form
             </li>
             <li>
-              <strong>Case information</strong> — details you provide about your matter,
+              <strong>Case information</strong>  -  details you provide about your matter,
               practice area, heads of loss, forum, and urgency (may include information
               about clients where you disclose it in the instruction)
             </li>
             <li>
-              <strong>Technical data</strong> — IP address, browser type, device
+              <strong>Technical data</strong>  -  IP address, browser type, device
               information, and cookies where you consent to analytics
             </li>
             <li>
-              <strong>Communications</strong> — correspondence by email or through our
+              <strong>Communications</strong>  -  correspondence by email or through our
               contact form
             </li>
           </ul>
@@ -120,7 +120,7 @@ export default function PrivacyPage() {
           <h2>Data Retention</h2>
           <p>
             We retain enquiry and instruction data for as long as necessary to fulfil the
-            referral, handle follow-up, and meet legal and regulatory requirements —
+            referral, handle follow-up, and meet legal and regulatory requirements  - 
             typically up to six years for business records unless a longer period is
             required. Analytics data is retained according to the configured retention
             period in Google Analytics (where enabled and consented).

@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   title:
     "How to Instruct a Damages Expert Witness UK | Step-by-Step Guide",
   description:
-    "Step-by-step guide for UK solicitors on instructing the right damages expert witness — SJE vs party-appointed, letters of instruction, and CPR Part 35.",
+    "Step-by-step guide for UK solicitors on instructing the right damages expert witness  -  SJE vs party-appointed, letters of instruction, and CPR Part 35.",
   path: PATH,
 });
 
@@ -59,7 +59,7 @@ const steps = [
         CPR Part 35 applies in civil courts in England and Wales. FPR Part 25 applies
         in family financial remedy proceedings (court permission and fee approval may be
         required). International arbitration follows institutional rules and the IBA
-        Rules on the Taking of Evidence — confirm the procedural timetable for expert
+        Rules on the Taking of Evidence  -  confirm the procedural timetable for expert
         reports and any tribunal directions on witness conferencing.
       </>
     ),
@@ -119,7 +119,7 @@ export default function HowToInstructPage() {
       />
       <PageHero
         title="How to Instruct a Damages Expert Witness UK"
-        subtitle="A seven-step process for solicitors and counsel — from practice area identification to SJE vs party-appointed experts and arbitration hot-tubbing."
+        subtitle="A seven-step process for solicitors and counsel  -  from practice area identification to SJE vs party-appointed experts and arbitration hot-tubbing."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "How to Instruct" },
@@ -214,7 +214,7 @@ export default function HowToInstructPage() {
                         </h4>
                         <p>
                           In international arbitration, tribunals frequently use
-                          witness conferencing — colloquially &quot;hot-tubbing&quot; —
+                          witness conferencing  -  colloquially &quot;hot-tubbing&quot;  - 
                           where experts give evidence concurrently and respond to each
                           other&apos;s and counsel&apos;s questions. This is distinct from
                           sequential cross-examination in English court trials. Prepare

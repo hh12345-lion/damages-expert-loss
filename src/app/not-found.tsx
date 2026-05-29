@@ -79,7 +79,7 @@ export default function NotFound() {
       </Section>
       <CTASection
         title="Need a damages expert witness?"
-        description="Personal injury quantum, commercial lost profits, clinical negligence, and international arbitration specialists — CPR Part 35 compliant."
+        description="Personal injury quantum, commercial lost profits, clinical negligence, and international arbitration specialists  -  CPR Part 35 compliant."
       />
     </>
   );

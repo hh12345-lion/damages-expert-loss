@@ -48,8 +48,8 @@ export default function WhatIsDamagesExpertWitnessPage() {
       <Section>
         <div className="prose-content mx-auto max-w-3xl">
           <p>
-            A damages expert witness is an independent financial professional —
-            typically a forensic accountant, actuary, or economist — retained to
+            A damages expert witness is an independent financial professional  - 
+            typically a forensic accountant, actuary, or economist  -  retained to
             provide a court- or tribunal-admissible opinion on the quantum of
             financial losses in litigation or arbitration. Unlike a medical expert,
             who addresses causation, diagnosis, and prognosis, the quantum expert
@@ -93,7 +93,7 @@ export default function WhatIsDamagesExpertWitnessPage() {
 
           <h2>What Is Quantum?</h2>
           <p>
-            Quantum is the amount of damages — the financial measure of the
+            Quantum is the amount of damages  -  the financial measure of the
             claimant&apos;s loss. Quantum experts apply established methodologies:
             multiplier/multiplicand analysis using Ogden Tables and the prescribed
             discount rate in personal injury; but-for counterfactual modelling in
@@ -112,7 +112,7 @@ export default function WhatIsDamagesExpertWitnessPage() {
 
           <h2>General Damages vs Special Damages</h2>
           <p>
-            General damages compensate non-quantifiable harm assessed by the court —
+            General damages compensate non-quantifiable harm assessed by the court  - 
             in personal injury, PSLA, loss of amenity, and Smith v Manchester awards
             for handicap on the labour market. Special damages compensate provable
             financial losses: past and future earnings, care, medical expenses, and
@@ -170,8 +170,8 @@ export default function WhatIsDamagesExpertWitnessPage() {
 
           <h2>When to Instruct a Damages Expert Witness</h2>
           <p>
-            Instruct as early as practicable — ideally at pre-action or immediately on
-            issue — so the expert can advise on document preservation, viable heads of
+            Instruct as early as practicable  -  ideally at pre-action or immediately on
+            issue  -  so the expert can advise on document preservation, viable heads of
             loss, and whether actuarial or care expert input is needed. Delay risks
             incomplete analysis, rushed assumptions, and a report that cannot withstand
             scrutiny at trial or in arbitration.

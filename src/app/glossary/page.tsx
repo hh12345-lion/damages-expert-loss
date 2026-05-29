@@ -10,7 +10,7 @@ import { glossaryTerms } from "@/data/glossary";
 export const metadata = createMetadata({
   title: "Damages Expert Witness Glossary | Key UK Legal & Finance Terms",
   description:
-    "Definitions of key damages and expert witness terms for UK litigation — from general damages to quantum, Ogden Tables, multiplier/multiplicand, and CPR Part 35.",
+    "Definitions of key damages and expert witness terms for UK litigation  -  from general damages to quantum, Ogden Tables, multiplier/multiplicand, and CPR Part 35.",
   path: "/glossary",
 });
 

@@ -9,7 +9,7 @@ import { faqItems } from "@/data/faqs";
 export const metadata = createMetadata({
   title: "Damages Expert Witness FAQ UK | Common Questions Answered",
   description:
-    "Answers to common questions about UK damages expert witnesses — general vs special damages, quantum methodology, CPR Part 35, SJE, fees, and more.",
+    "Answers to common questions about UK damages expert witnesses  -  general vs special damages, quantum methodology, CPR Part 35, SJE, fees, and more.",
   path: "/faq",
 });
 

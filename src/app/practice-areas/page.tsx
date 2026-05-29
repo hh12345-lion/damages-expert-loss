@@ -26,7 +26,7 @@ export default function PracticeAreasHubPage() {
       />
       <PageHero
         title="Damages Expert Witnesses by Practice Area"
-        subtitle="Three distinct audiences — personal injury & clinical negligence, commercial litigation, and international arbitration — each with dedicated quantum expertise."
+        subtitle="Three distinct audiences  -  personal injury & clinical negligence, commercial litigation, and international arbitration  -  each with dedicated quantum expertise."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Practice Areas" },
@@ -35,7 +35,7 @@ export default function PracticeAreasHubPage() {
       <Section>
         <p className="mx-auto mb-10 max-w-3xl text-center text-body">
           Unlike generic expert witness directories, we separate practice areas
-          so you instruct the right specialist from the outset — PI quantum
+          so you instruct the right specialist from the outset  -  PI quantum
           forensic accountants, commercial damages experts, or international
           arbitration economists.
         </p>

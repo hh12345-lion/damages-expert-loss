@@ -50,8 +50,8 @@ See [docs/SITEMAP-AND-ROBOTS.md](docs/SITEMAP-AND-ROBOTS.md) for how the URL inv
 
 ## Site structure
 
-- **21 routes** — homepage, services, types-of-damages pillar, practice areas (hub + 4), case types (hub + 12), guides (hub + 6), experts, glossary, FAQ, fees, qualifications, how-to-instruct, contact, thank-you, privacy, terms, 404
-- **SEO** — JSON-LD (Organization, ProfessionalService, FAQPage, Article, Person, BreadcrumbList), auto-generated sitemap with priority weights
-- **Design** — burgundy `#4A1942` / gold `#C9A84C`, Inter font, responsive 320px+
+- **21 routes**  -  homepage, services, types-of-damages pillar, practice areas (hub + 4), case types (hub + 12), guides (hub + 6), experts, glossary, FAQ, fees, qualifications, how-to-instruct, contact, thank-you, privacy, terms, 404
+- **SEO**  -  JSON-LD (Organization, ProfessionalService, FAQPage, Article, Person, BreadcrumbList), auto-generated sitemap with priority weights
+- **Design**  -  burgundy `#4A1942` / gold `#C9A84C`, Inter font, responsive 320px+
 
 Canonical host: **https://www.damagesexpertwitness.co.uk**

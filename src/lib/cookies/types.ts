@@ -15,7 +15,7 @@ export interface CategoryConsent {
 export interface StoredConsent extends CategoryConsent {
   /** Unix ms when consent was saved */
   timestamp: number;
-  /** Policy version — bump when cookie policy changes materially */
+  /** Policy version  -  bump when cookie policy changes materially */
   version: string;
 }
 
@@ -24,7 +24,7 @@ export type ConsentStatus = "pending" | "granted";
 export interface CookieConsentContextValue {
   status: ConsentStatus;
   consent: CategoryConsent;
-  /** True after client mount — avoids hydration mismatch for banner visibility */
+  /** True after client mount  -  avoids hydration mismatch for banner visibility */
   isReady: boolean;
   showPreferences: boolean;
   acceptAll: () => void;

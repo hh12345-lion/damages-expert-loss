@@ -43,7 +43,7 @@ export default function ServicesPage() {
       />
       <PageHero
         title="Damages Expert Witness Services UK"
-        subtitle="Eight core quantum services — from loss of earnings and pension loss to commercial lost profits, IP infringement, and international arbitration."
+        subtitle="Eight core quantum services  -  from loss of earnings and pension loss to commercial lost profits, IP infringement, and international arbitration."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services" },

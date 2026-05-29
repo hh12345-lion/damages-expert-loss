@@ -1,6 +1,6 @@
 /**
  * Test Google Sheets connection. Run: npx tsx scripts/test-sheets.ts
- * Requires .env.local with GOOGLE_* variables (loaded via dotenv not included — use netlify dev or export vars).
+ * Requires .env.local with GOOGLE_* variables (loaded via dotenv not included  -  use netlify dev or export vars).
  */
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -30,7 +30,7 @@ function loadEnvLocal() {
       if (!process.env[key]) process.env[key] = val;
     }
   } catch {
-    console.warn("No .env.local found — set GOOGLE_* env vars manually.");
+    console.warn("No .env.local found  -  set GOOGLE_* env vars manually.");
   }
 }
 

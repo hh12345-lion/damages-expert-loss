@@ -10,7 +10,7 @@ export const metadata = createMetadata({
   title:
     "Our Damages Expert Witnesses | UK Forensic Accountants & Quantum Specialists",
   description:
-    "DamagesExpertWitness.co.uk connects UK solicitors with qualified damages expert witnesses — forensic accountants, actuaries, and quantum economists for all types of litigation.",
+    "DamagesExpertWitness.co.uk connects UK solicitors with qualified damages expert witnesses  -  forensic accountants, actuaries, and quantum economists for all types of litigation.",
   path: "/experts",
 });
 

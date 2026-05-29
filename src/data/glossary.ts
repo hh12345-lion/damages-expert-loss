@@ -17,7 +17,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Allied Maples Principle",
     slug: "allied-maples-principle",
     definition:
-      "From Allied Maples Group Ltd v Simmons & Simmons [1995] 1 WLR 1602: where a defendant's negligence deprives the claimant of the chance to obtain a benefit from a third party, damages reflect the value of the chance lost — expressed as a percentage probability multiplied by the full benefit. Central to solicitor negligence, professional negligence, and other claims where the outcome depended on a third party's decision. The expert must support the probability assessment with evidence, not speculation.",
+      "From Allied Maples Group Ltd v Simmons & Simmons [1995] 1 WLR 1602: where a defendant's negligence deprives the claimant of the chance to obtain a benefit from a third party, damages reflect the value of the chance lost  -  expressed as a percentage probability multiplied by the full benefit. Central to solicitor negligence, professional negligence, and other claims where the outcome depended on a third party's decision. The expert must support the probability assessment with evidence, not speculation.",
   },
   {
     term: "But-For Analysis",
@@ -33,7 +33,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Chorzów Factory Standard",
     slug: "chorzow-factory-standard",
     definition:
-      "The international law principle from Factory at Chorzów (Germany v Poland) (1928) PCIJ Ser A No 17, requiring full reparation for an internationally wrongful act — wiping out all consequences of the breach and restoring the injured party to the position it would have been in had the breach not occurred. In investment treaty arbitration, experts quantify full reparation using fair market value for expropriation or DCF/lost profits for regulatory breaches.",
+      "The international law principle from Factory at Chorzów (Germany v Poland) (1928) PCIJ Ser A No 17, requiring full reparation for an internationally wrongful act  -  wiping out all consequences of the breach and restoring the injured party to the position it would have been in had the breach not occurred. In investment treaty arbitration, experts quantify full reparation using fair market value for expropriation or DCF/lost profits for regulatory breaches.",
     link: {
       href: "/practice-areas/international-arbitration",
       label: "International Arbitration Practice Area",
@@ -49,7 +49,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Compensatory Damages",
     slug: "compensatory-damages",
     definition:
-      "Damages awarded to compensate the claimant for loss suffered, aiming to restore them to the position they would have been in absent the wrong — per Livingstone v Rawyards Coal Co (1880) in tort and Robinson v Harman [1848] in contract. Compensatory damages encompass expectation loss (lost profits), reliance loss (wasted expenditure), and pecuniary special damages in personal injury. They are distinct from restitutionary, aggravated, and exemplary damages.",
+      "Damages awarded to compensate the claimant for loss suffered, aiming to restore them to the position they would have been in absent the wrong  -  per Livingstone v Rawyards Coal Co (1880) in tort and Robinson v Harman [1848] in contract. Compensatory damages encompass expectation loss (lost profits), reliance loss (wasted expenditure), and pecuniary special damages in personal injury. They are distinct from restitutionary, aggravated, and exemplary damages.",
   },
   {
     term: "CPR Part 35",
@@ -65,10 +65,10 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Discount Rate",
     slug: "discount-rate",
     definition:
-      "The rate applied to reduce future financial losses to present value when awarding a lump sum, reflecting the assumption that the claimant will invest the award and achieve a real return. For personal injury claims, the Lord Chancellor sets the prescribed rate under the Damages Act 1996 — currently -0.25% for future pecuniary loss following the Civil Liability Act 2018. The discount rate is applied through Ogden Table multipliers to all future loss heads.",
+      "The rate applied to reduce future financial losses to present value when awarding a lump sum, reflecting the assumption that the claimant will invest the award and achieve a real return. For personal injury claims, the Lord Chancellor sets the prescribed rate under the Damages Act 1996  -  currently -0.25% for future pecuniary loss following the Civil Liability Act 2018. The discount rate is applied through Ogden Table multipliers to all future loss heads.",
     link: {
       href: "/types-of-damages",
-      label: "Types of Damages — Discount Rate",
+      label: "Types of Damages  -  Discount Rate",
     },
   },
   {
@@ -87,7 +87,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "FPR Part 25",
     slug: "fpr-part-25",
     definition:
-      "Family Procedure Rules Part 25 governs expert evidence in family proceedings, including financial remedy cases where damages or financial loss quantification may arise. The expert's duties mirror CPR Part 35 — independence, overriding duty to the court, and compliant report format. Court permission is required for expert evidence in family proceedings, and the expert's fees may need to be approved in advance.",
+      "Family Procedure Rules Part 25 governs expert evidence in family proceedings, including financial remedy cases where damages or financial loss quantification may arise. The expert's duties mirror CPR Part 35  -  independence, overriding duty to the court, and compliant report format. Court permission is required for expert evidence in family proceedings, and the expert's fees may need to be approved in advance.",
     link: {
       href: "/qualifications",
       label: "Expert Qualifications & FPR Part 25",
@@ -103,10 +103,10 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "General Damages",
     slug: "general-damages",
     definition:
-      "Non-quantifiable compensatory damages assessed by the court rather than calculated by an expert — including PSLA (pain, suffering and loss of amenity), loss of amenity, and Smith v Manchester awards for handicap on the labour market. In commercial litigation, general damages loosely maps to direct loss of the bargain. General damages are distinct from special damages, which require precise financial quantification by a damages expert witness.",
+      "Non-quantifiable compensatory damages assessed by the court rather than calculated by an expert  -  including PSLA (pain, suffering and loss of amenity), loss of amenity, and Smith v Manchester awards for handicap on the labour market. In commercial litigation, general damages loosely maps to direct loss of the bargain. General damages are distinct from special damages, which require precise financial quantification by a damages expert witness.",
     link: {
       href: "/types-of-damages",
-      label: "Types of Damages — General vs Special",
+      label: "Types of Damages  -  General vs Special",
     },
   },
   {
@@ -153,13 +153,13 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Judicial College Guidelines (JCG)",
     slug: "judicial-college-guidelines-jcg",
     definition:
-      "Published guidelines assisting courts in assessing general damages for personal injury — including brackets for PSLA by injury type and severity. The Guidelines are updated periodically and are persuasive rather than binding. They do not cover special damages, which require expert quantification. Solicitors use the JCG to value the general damages element while instructing a quantum expert for pecuniary heads.",
+      "Published guidelines assisting courts in assessing general damages for personal injury  -  including brackets for PSLA by injury type and severity. The Guidelines are updated periodically and are persuasive rather than binding. They do not cover special damages, which require expert quantification. Solicitors use the JCG to value the general damages element while instructing a quantum expert for pecuniary heads.",
   },
   {
     term: "Loss of Amenity",
     slug: "loss-of-amenity",
     definition:
-      "The inability to enjoy normal life activities — hobbies, social life, physical activities — as a result of injury. Loss of amenity forms part of the PSLA general damages award assessed by the court using Judicial College Guidelines, not quantified by a damages expert witness. It is a non-pecuniary head distinct from financial special damages.",
+      "The inability to enjoy normal life activities  -  hobbies, social life, physical activities  -  as a result of injury. Loss of amenity forms part of the PSLA general damages award assessed by the court using Judicial College Guidelines, not quantified by a damages expert witness. It is a non-pecuniary head distinct from financial special damages.",
   },
   {
     term: "Loss of Chance",
@@ -203,7 +203,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Pecuniary Loss",
     slug: "pecuniary-loss",
     definition:
-      "Financial loss measurable in monetary terms — including past and future loss of earnings, care costs, pension loss, medical expenses, and commercial lost profits. Pecuniary losses are typically special damages in personal injury and are quantified by a forensic accountant or actuary. They are distinct from non-pecuniary losses such as pain and suffering, which are general damages assessed by the court.",
+      "Financial loss measurable in monetary terms  -  including past and future loss of earnings, care costs, pension loss, medical expenses, and commercial lost profits. Pecuniary losses are typically special damages in personal injury and are quantified by a forensic accountant or actuary. They are distinct from non-pecuniary losses such as pain and suffering, which are general damages assessed by the court.",
   },
   {
     term: "Periodical Payments Order (PPO)",
@@ -241,13 +241,13 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "SAAMCo Principle",
     slug: "saamco-principle",
     definition:
-      "From South Australia Asset Management Corp v York Montague Ltd [1996] AC 191: a professional adviser is liable only for losses within the scope of their duty — the losses for which their advice was responsible, not all losses flowing from the transaction. In professional negligence quantum, the expert must identify which losses fall within SAAMCo scope before applying but-for analysis, preventing over-quantification of irrecoverable heads.",
+      "From South Australia Asset Management Corp v York Montague Ltd [1996] AC 191: a professional adviser is liable only for losses within the scope of their duty  -  the losses for which their advice was responsible, not all losses flowing from the transaction. In professional negligence quantum, the expert must identify which losses fall within SAAMCo scope before applying but-for analysis, preventing over-quantification of irrecoverable heads.",
   },
   {
     term: "Schedule of Loss",
     slug: "schedule-of-loss",
     definition:
-      "A structured document setting out all financial heads of claim in personal injury, clinical negligence, and employment claims — past losses with supporting evidence, future losses with Ogden multiplier calculations, interest, and total damages sought. The defendant prepares a Counter-Schedule. The quantum expert's report underpins the Schedule and both documents anchor expert evidence and trial preparation.",
+      "A structured document setting out all financial heads of claim in personal injury, clinical negligence, and employment claims  -  past losses with supporting evidence, future losses with Ogden multiplier calculations, interest, and total damages sought. The defendant prepares a Counter-Schedule. The quantum expert's report underpins the Schedule and both documents anchor expert evidence and trial preparation.",
     link: {
       href: "/guides/schedule-of-loss-expert-evidence",
       label: "Schedule of Loss Expert Evidence Guide",
@@ -267,16 +267,16 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Smith v Manchester Award",
     slug: "smith-v-manchester-award",
     definition:
-      "General damages for residual handicap on the open labour market where the claimant can work but at a reduced level due to injury — following Smith v Manchester Corp (1974). Typically quantified as a lump sum of up to two years' net earnings, reflecting the disadvantage in competing for employment. Distinct from future loss of earnings where the claimant cannot work at all or for a defined period.",
+      "General damages for residual handicap on the open labour market where the claimant can work but at a reduced level due to injury  -  following Smith v Manchester Corp (1974). Typically quantified as a lump sum of up to two years' net earnings, reflecting the disadvantage in competing for employment. Distinct from future loss of earnings where the claimant cannot work at all or for a defined period.",
   },
   {
     term: "Special Damages",
     slug: "special-damages",
     definition:
-      "Quantifiable financial losses proved by evidence — past loss of earnings, care costs, medical expenses, and future losses capitalised via Ogden Tables. Special damages are distinguished from general damages (PSLA, loss of amenity) which are assessed by the court. A damages expert witness quantifies all pecuniary special damages in the Schedule of Loss.",
+      "Quantifiable financial losses proved by evidence  -  past loss of earnings, care costs, medical expenses, and future losses capitalised via Ogden Tables. Special damages are distinguished from general damages (PSLA, loss of amenity) which are assessed by the court. A damages expert witness quantifies all pecuniary special damages in the Schedule of Loss.",
     link: {
       href: "/types-of-damages",
-      label: "Types of Damages — General vs Special",
+      label: "Types of Damages  -  General vs Special",
     },
   },
   {

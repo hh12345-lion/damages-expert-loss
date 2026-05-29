@@ -10,9 +10,9 @@ export const practiceAreas: PracticeAreaPage[] = [
     metaTitle:
       "Personal Injury Damages Expert Witness UK | Loss of Earnings & Quantum",
     metaDescription:
-      "Damages expert witnesses for UK personal injury quantum — loss of earnings, pension loss, Smith v Manchester, future care, Ogden Tables, periodical payments, and FAA 1976 dependency claims.",
+      "Damages expert witnesses for UK personal injury quantum  -  loss of earnings, pension loss, Smith v Manchester, future care, Ogden Tables, periodical payments, and FAA 1976 dependency claims.",
     paragraphs: [
-      "Personal injury quantum experts — typically forensic accountants with APIL First Tier accreditation, ACA or FCA qualifications, and Fellow of the Expert Witness Institute membership — quantify the financial losses flowing from injury. This includes past and future loss of earnings on a net basis, pension loss using Ogden Tables, future care costs capitalised with the prescribed discount rate, and other special damages presented in a Schedule of Loss compliant with CPR Part 35.",
+      "Personal injury quantum experts  -  typically forensic accountants with APIL First Tier accreditation, ACA or FCA qualifications, and Fellow of the Expert Witness Institute membership  -  quantify the financial losses flowing from injury. This includes past and future loss of earnings on a net basis, pension loss using Ogden Tables, future care costs capitalised with the prescribed discount rate, and other special damages presented in a Schedule of Loss compliant with CPR Part 35.",
       "Future loss of earnings is calculated using the multiplier/multiplicand method under the Ogden Tables, with adjustments for Smith v Manchester handicap awards, partial return to work, and retirement contingencies. Fatal accident claims under the Fatal Accidents Act 1976 require dependency calculations for spouses, children, and qualifying co-habitees, with multipliers applied from the date of death. Periodical payments orders may be modelled alongside lump sum awards where long-term care or earnings uncertainty warrants index-linked annual payments.",
       "Solicitors instructing PI quantum experts should provide pre-accident financial records, medical reports on prognosis and employability, and pension scheme documentation early in the litigation. Early instruction allows robust Schedules of Loss to be exchanged before trial, supports Part 36 strategy, and ensures assumptions on life expectancy, discount rate, and contingencies are agreed or clearly disputed before joint expert meetings.",
     ],
@@ -21,7 +21,7 @@ export const practiceAreas: PracticeAreaPage[] = [
         question:
           "What does a personal injury quantum expert witness do?",
         answer:
-          "A PI quantum expert witness — usually a forensic accountant — calculates the financial losses suffered by the claimant as a result of their injury. This covers past and future loss of earnings, pension loss, care costs, and other special damages, using the Ogden Tables and the prescribed discount rate to capitalise future losses.",
+          "A PI quantum expert witness  -  usually a forensic accountant  -  calculates the financial losses suffered by the claimant as a result of their injury. This covers past and future loss of earnings, pension loss, care costs, and other special damages, using the Ogden Tables and the prescribed discount rate to capitalise future losses.",
       },
       {
         question: "What are the Ogden Tables and how are they used?",
@@ -39,7 +39,7 @@ export const practiceAreas: PracticeAreaPage[] = [
     metaTitle:
       "Clinical Negligence Damages Expert Witness UK | Quantum & Loss of Earnings",
     metaDescription:
-      "Clinical negligence quantum expert witnesses for UK solicitors — loss of earnings from avoidable injury, future care costs, George v Biggs accommodation, PPOs, and Court of Protection cases.",
+      "Clinical negligence quantum expert witnesses for UK solicitors  -  loss of earnings from avoidable injury, future care costs, George v Biggs accommodation, PPOs, and Court of Protection cases.",
     paragraphs: [
       "Clinical negligence claims often involve catastrophic injury where quantum exceeds seven figures across multiple heads of loss. A damages expert witness coordinates pecuniary quantification with care, accommodation, and life expectancy experts, preparing a comprehensive Schedule of Loss covering past and future care, case management, therapies, equipment, loss of earnings, pension loss, accommodation, and Court of Protection costs.",
       "The approach to accommodation costs has changed fundamentally following George v Biggs [2023], in which the Court of Appeal confirmed that Roberts v Johnstone no longer applies and claimants may recover the full capital cost of suitable disability-adapted housing, subject to appropriate deductions. Future care costs are assessed by care experts and capitalised by the quantum expert using Ogden multipliers, with periodical payments orders modelled where annual indexation to ASHE provides better long-term security than a lump sum.",
@@ -50,7 +50,7 @@ export const practiceAreas: PracticeAreaPage[] = [
         question:
           "How are future care costs calculated in clinical negligence?",
         answer:
-          "Future care costs are quantified by a care expert who assesses the claimant's needs and costings, then capitalised by the quantum expert using the Ogden Tables and prescribed discount rate. Following George v Biggs [2023], the approach to accommodation costs has changed — the Court of Appeal confirmed that Roberts v Johnstone no longer applies and the full capital cost of accommodation may be recovered.",
+          "Future care costs are quantified by a care expert who assesses the claimant's needs and costings, then capitalised by the quantum expert using the Ogden Tables and prescribed discount rate. Following George v Biggs [2023], the approach to accommodation costs has changed  -  the Court of Appeal confirmed that Roberts v Johnstone no longer applies and the full capital cost of accommodation may be recovered.",
       },
       {
         question:
@@ -69,7 +69,7 @@ export const practiceAreas: PracticeAreaPage[] = [
     metaTitle:
       "Commercial Damages Expert Witness UK | Lost Profits, IP & Professional Negligence",
     metaDescription:
-      "Commercial damages expert witnesses for UK litigation — lost profits, breach of contract, IP infringement, professional negligence, but-for methodology, and Hadley v Baxendale remoteness analysis.",
+      "Commercial damages expert witnesses for UK litigation  -  lost profits, breach of contract, IP infringement, professional negligence, but-for methodology, and Hadley v Baxendale remoteness analysis.",
     paragraphs: [
       "Commercial litigation damages experts quantify financial loss arising from breach of contract, professional negligence, intellectual property infringement, shareholder disputes, and business interruption. The but-for methodology constructs a counterfactual financial model showing the claimant's projected position absent the wrong and compares it to actual outcomes, with separate analysis for expectation loss, reliance loss, and consequential loss subject to Hadley v Baxendale remoteness.",
       "Lost profits and expectation damages require robust financial records, management accounts, and market evidence to support projections. Professional negligence claims demand early attention to SAAMCo scope of duty and Allied Maples loss of chance discounting. IP cases may require parallel analysis of lost profits, reasonable royalty, and account of profits to inform remedy election. Expert determination and arbitration clauses in commercial contracts frequently appoint forensic accountants to resolve quantum without full trial.",
@@ -80,12 +80,12 @@ export const practiceAreas: PracticeAreaPage[] = [
         question:
           "How does a commercial damages expert differ from a PI quantum expert?",
         answer:
-          "A commercial damages expert quantifies financial losses arising from commercial disputes — breach of contract, IP infringement, professional negligence — applying the but-for methodology and Hadley v Baxendale remoteness principles. A PI quantum expert applies the Ogden Tables and discount rate to personal financial losses. The underlying compensatory principle is the same but the methodology differs significantly.",
+          "A commercial damages expert quantifies financial losses arising from commercial disputes  -  breach of contract, IP infringement, professional negligence  -  applying the but-for methodology and Hadley v Baxendale remoteness principles. A PI quantum expert applies the Ogden Tables and discount rate to personal financial losses. The underlying compensatory principle is the same but the methodology differs significantly.",
       },
       {
         question: "What is the but-for test in commercial damages?",
         answer:
-          "The but-for test asks: but for the breach or wrong, what financial position would the claimant be in? The expert constructs a counterfactual financial model showing the projected position absent the breach and compares it to the actual outcome — quantifying the net financial loss.",
+          "The but-for test asks: but for the breach or wrong, what financial position would the claimant be in? The expert constructs a counterfactual financial model showing the projected position absent the breach and compares it to the actual outcome  -  quantifying the net financial loss.",
       },
     ],
   },
@@ -98,7 +98,7 @@ export const practiceAreas: PracticeAreaPage[] = [
     metaTitle:
       "International Arbitration Damages Expert Witness UK | ICC, LCIA & ICSID Quantum",
     metaDescription:
-      "International arbitration quantum experts for UK counsel — Chorzów Factory full reparation, DCF, FMV, investment treaty damages, IBA Rules on Evidence, and tribunal-appointed experts.",
+      "International arbitration quantum experts for UK counsel  -  Chorzów Factory full reparation, DCF, FMV, investment treaty damages, IBA Rules on Evidence, and tribunal-appointed experts.",
     paragraphs: [
       "International arbitration requires damages experts comfortable with ICC, LCIA, ICSID, UNCITRAL, and ad hoc rules, alongside substantive damages law that may be English law, civil law, or international investment law. Investment treaty claims apply the Chorzów Factory full reparation standard, quantifying expropriation through fair market value and regulatory breaches through discounted cash flow and lost profits models subject to rigorous tribunal scrutiny.",
       "Commercial arbitration quantum follows but-for and lost profits methodology adapted to the governing law of the contract and seat of arbitration. Experts prepare reports compliant with IBA Rules on Evidence, respond to tribunal-appointed expert procedures under Article 6, and participate in hot-tubbing and witness conferencing where party experts are examined concurrently. Currency conversion, taxes, and interest require explicit treatment consistent with the applicable law and any bilateral investment treaty provisions.",
@@ -109,13 +109,13 @@ export const practiceAreas: PracticeAreaPage[] = [
         question:
           "How does damages quantification differ in international arbitration?",
         answer:
-          "International arbitration damages follow the substantive law governing the dispute — which may be English law, civil law, or international law (for investment treaty cases). In investment treaty arbitration, the full reparation standard from Chorzów Factory [1928] applies — restoring the claimant to the position it would have been in absent the breach, often using fair market value or DCF methodology.",
+          "International arbitration damages follow the substantive law governing the dispute  -  which may be English law, civil law, or international law (for investment treaty cases). In investment treaty arbitration, the full reparation standard from Chorzów Factory [1928] applies  -  restoring the claimant to the position it would have been in absent the breach, often using fair market value or DCF methodology.",
       },
       {
         question:
           "What is the IBA Rules on Evidence approach to expert witnesses?",
         answer:
-          "The IBA Rules on Evidence (Article 5) allow each party to submit expert reports, with the tribunal having discretion to direct a tribunal-appointed expert under Article 6. Party experts and tribunal experts may be examined at the same hearing — known as \"hot-tubbing\" or witness conferencing — a procedure common in international arbitration.",
+          "The IBA Rules on Evidence (Article 5) allow each party to submit expert reports, with the tribunal having discretion to direct a tribunal-appointed expert under Article 6. Party experts and tribunal experts may be examined at the same hearing  -  known as \"hot-tubbing\" or witness conferencing  -  a procedure common in international arbitration.",
       },
     ],
   },

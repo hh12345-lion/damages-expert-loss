@@ -38,7 +38,7 @@ export default function HomePage() {
           <p className="text-lg leading-relaxed text-body">
             DamagesExpertWitness.co.uk helps UK solicitors, barristers, and
             international arbitration counsel instruct the right quantum expert
-            for every head of loss — from Ogden Table earnings calculations to
+            for every head of loss  -  from Ogden Table earnings calculations to
             but-for commercial models and ICSID investment treaty damages.
           </p>
         </div>
@@ -116,7 +116,7 @@ export default function HomePage() {
             <p className="mt-3 text-sm leading-relaxed text-body">
               Our comprehensive guide to general damages, special damages,
               pecuniary and non-pecuniary loss, compensatory principles, and
-              discount rate methodology — the definitive reference for UK
+              discount rate methodology  -  the definitive reference for UK
               litigation solicitors.
             </p>
             <Link

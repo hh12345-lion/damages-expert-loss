@@ -2,7 +2,7 @@ import { appendRow, type CellValue } from "@/lib/google-sheets";
 
 export const BRAND_NAME = "DamagesExpertWitness";
 
-/** Row 1 headers in Google Sheets — must match column order in buildLeadSheetRow */
+/** Row 1 headers in Google Sheets  -  must match column order in buildLeadSheetRow */
 export const LEAD_SHEET_HEADERS = [
   "Timestamp",
   "Full Name",

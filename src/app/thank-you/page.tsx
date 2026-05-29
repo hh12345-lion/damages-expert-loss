@@ -42,7 +42,7 @@ export default function ThankYouPage() {
   return (
     <>
       <PageHero
-        title="Thank You — Request Received"
+        title="Thank You  -  Request Received"
         subtitle="Your instruction enquiry has been submitted successfully. A member of our team will review your case details shortly."
         breadcrumbs={[
           { label: "Home", href: "/" },

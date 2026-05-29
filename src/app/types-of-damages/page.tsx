@@ -10,7 +10,7 @@ import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 const PATH = "/types-of-damages";
 const H1 = "Types of Damages in UK Law: A Complete Guide for Solicitors";
 const DESCRIPTION =
-  "The complete guide to types of damages recoverable in UK litigation — general damages, special damages, pecuniary loss, non-pecuniary loss, compensatory, aggravated, and restitutionary damages explained.";
+  "The complete guide to types of damages recoverable in UK litigation  -  general damages, special damages, pecuniary loss, non-pecuniary loss, compensatory, aggravated, and restitutionary damages explained.";
 
 export const metadata = createMetadata({
   title:
@@ -47,7 +47,7 @@ export default function TypesOfDamagesPage() {
       />
       <PageHero
         title={H1}
-        subtitle="Definition-first guide to recoverable damages in UK civil litigation and arbitration — for solicitors instructing quantum experts."
+        subtitle="Definition-first guide to recoverable damages in UK civil litigation and arbitration  -  for solicitors instructing quantum experts."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Types of Damages" },
@@ -184,13 +184,13 @@ export default function TypesOfDamagesPage() {
                   <td>Pecuniary</td>
                   <td>Financial loss capable of monetary quantification</td>
                   <td>Yes (subject to causation and remoteness)</td>
-                  <td>Usually yes — forensic accountant, actuary, or economist</td>
+                  <td>Usually yes  -  forensic accountant, actuary, or economist</td>
                 </tr>
                 <tr>
                   <td>Non-pecuniary</td>
                   <td>Pain, suffering, loss of amenity, injury to feelings</td>
                   <td>Yes in appropriate claims</td>
-                  <td>No — assessed by the judge (expert may assist on financial context only)</td>
+                  <td>No  -  assessed by the judge (expert may assist on financial context only)</td>
                 </tr>
               </tbody>
             </table>
@@ -217,7 +217,7 @@ export default function TypesOfDamagesPage() {
                 <tr>
                   <td>Compensatory</td>
                   <td>
-                    Restore claimant to pre-wrong position — expectation, reliance, or
+                    Restore claimant to pre-wrong position  -  expectation, reliance, or
                     tortious loss
                   </td>
                   <td>
@@ -232,16 +232,16 @@ export default function TypesOfDamagesPage() {
                     outrageous (tort)
                   </td>
                   <td>Insult added to injury; oppressive conduct in defamation</td>
-                  <td>Rarely — court assessment; financial context occasionally relevant</td>
+                  <td>Rarely  -  court assessment; financial context occasionally relevant</td>
                 </tr>
                 <tr>
                   <td>Exemplary / Punitive</td>
                   <td>
-                    Punish defendant and deter repetition — limited categories (
+                    Punish defendant and deter repetition  -  limited categories (
                     <em>Rookes v Barnard</em> [1964])
                   </td>
                   <td>Oppressive government conduct; calculated profit-making wrong</td>
-                  <td>No — not available in ordinary contract claims</td>
+                  <td>No  -  not available in ordinary contract claims</td>
                 </tr>
                 <tr>
                   <td>Nominal</td>
@@ -256,7 +256,7 @@ export default function TypesOfDamagesPage() {
                     compensate loss
                   </td>
                   <td>Account of profits in IP; disgorgement in fiduciary breach</td>
-                  <td>Yes — forensic analysis of profits and infringer accounts</td>
+                  <td>Yes  -  forensic analysis of profits and infringer accounts</td>
                 </tr>
               </tbody>
             </table>
@@ -308,14 +308,14 @@ export default function TypesOfDamagesPage() {
             unjust enrichment. In intellectual property disputes, the claimant may
             elect between compensatory lost profits and an account of the
             defendant&apos;s profits. Forensic accountants analyse infringer accounts
-            and reasonable royalty alternatives — see{" "}
+            and reasonable royalty alternatives  -  see{" "}
             <Link href="/case-types/ip-infringement-damages">
               IP infringement damages
             </Link>{" "}
             and <Link href="/services#ip-infringement-damages">IP infringement services</Link>.
           </p>
 
-          <h2 id="personal-injury-heads">Personal Injury Damages — Key Heads</h2>
+          <h2 id="personal-injury-heads">Personal Injury Damages  -  Key Heads</h2>
           <p>
             Personal injury and clinical negligence claims combine general and special
             damages. The quantum expert&apos;s role is to quantify pecuniary special
@@ -390,7 +390,7 @@ export default function TypesOfDamagesPage() {
             .
           </p>
 
-          <h2 id="commercial-heads">Commercial Damages — Key Heads</h2>
+          <h2 id="commercial-heads">Commercial Damages  -  Key Heads</h2>
           <p>
             Commercial and contractual disputes focus on financial compensatory heads,
             often quantified through counterfactual (but-for) modelling by a forensic

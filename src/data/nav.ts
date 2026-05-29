@@ -17,7 +17,7 @@ export const navPracticeAreaLinks = practiceAreas.map((p) => ({
   label: p.title,
 }));
 
-/** Dropdown under Types of Damages — pillar sections */
+/** Dropdown under Types of Damages  -  pillar sections */
 export const navTypesOfDamagesLinks = [
   { href: "/types-of-damages", label: "Complete Guide" },
   {
@@ -48,7 +48,7 @@ export const navTypesOfDamagesLinks = [
   { href: "/types-of-damages#interest-on-damages", label: "Interest on Damages" },
 ];
 
-/** Resources dropdown — desktop nav */
+/** Resources dropdown  -  desktop nav */
 export const navResourcesLinks = [
   { href: "/guides", label: "Solicitor Guides" },
   { href: "/how-to-instruct", label: "How to Instruct" },

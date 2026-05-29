@@ -14,7 +14,7 @@ export const metadata = createMetadata({
   title:
     "Damages Expert Witness Qualifications UK | ACA, CFA & Forensic Credentials",
   description:
-    "What credentials should a UK damages expert witness hold? ACA, CFA, CFE, actuarial, and APIL accreditation explained — plus CPR Part 35 and FPR Part 25 compliance.",
+    "What credentials should a UK damages expert witness hold? ACA, CFA, CFE, actuarial, and APIL accreditation explained  -  plus CPR Part 35 and FPR Part 25 compliance.",
   path: PATH,
 });
 
@@ -59,7 +59,7 @@ export default function QualificationsPage() {
           <h2>Three Expert Profiles</h2>
           <p>
             Damages quantification draws on three principal disciplines. The right
-            expert depends on heads of loss, forum, and complexity — not every claim
+            expert depends on heads of loss, forum, and complexity  -  not every claim
             requires all three.
           </p>
 
@@ -71,27 +71,27 @@ export default function QualificationsPage() {
           </p>
           <ul>
             <li>
-              <strong>ACA or FCA</strong> — Associate or Fellow of the Institute of
+              <strong>ACA or FCA</strong>  -  Associate or Fellow of the Institute of
               Chartered Accountants in England and Wales (ICAEW)
             </li>
             <li>
-              <strong>ACCA or FCCA</strong> — Chartered Certified Accountant
+              <strong>ACCA or FCCA</strong>  -  Chartered Certified Accountant
               credentials
             </li>
             <li>
-              <strong>CFA</strong> — Chartered Financial Analyst (relevant for valuation
+              <strong>CFA</strong>  -  Chartered Financial Analyst (relevant for valuation
               and investment analysis)
             </li>
             <li>
-              <strong>CFE</strong> — Certified Fraud Examiner (where fraud or dishonesty
+              <strong>CFE</strong>  -  Certified Fraud Examiner (where fraud or dishonesty
               context affects quantum)
             </li>
             <li>
-              <strong>APIL First Tier accreditation</strong> — for personal injury and
+              <strong>APIL First Tier accreditation</strong>  -  for personal injury and
               clinical negligence specialists
             </li>
             <li>
-              <strong>Fellow of the Expert Witness Institute (FEWI)</strong> —
+              <strong>Fellow of the Expert Witness Institute (FEWI)</strong>  - 
               demonstrates dedicated expert witness practice
             </li>
           </ul>
@@ -105,7 +105,7 @@ export default function QualificationsPage() {
           </p>
           <ul>
             <li>
-              <strong>FIA</strong> — Fellow of the Institute and Faculty of Actuaries
+              <strong>FIA</strong>  -  Fellow of the Institute and Faculty of Actuaries
             </li>
           </ul>
           <p>
@@ -125,15 +125,15 @@ export default function QualificationsPage() {
           </p>
           <ul>
             <li>
-              <strong>PhD in Economics or Finance</strong> — rigorous quantitative
+              <strong>PhD in Economics or Finance</strong>  -  rigorous quantitative
               training for DCF and econometric analysis
             </li>
             <li>
-              <strong>IBA Rules on Evidence experience</strong> — party-appointed and
+              <strong>IBA Rules on Evidence experience</strong>  -  party-appointed and
               tribunal-appointed expert proceedings
             </li>
             <li>
-              <strong>Publication and ranking recognition</strong> — e.g. Who&apos;s Who
+              <strong>Publication and ranking recognition</strong>  -  e.g. Who&apos;s Who
               Legal arbitration expert witness listings where applicable
             </li>
             <li>
@@ -210,35 +210,35 @@ export default function QualificationsPage() {
           </p>
           <ul>
             <li>
-              <strong>Advocacy in the report</strong> — arguing the client&apos;s case
+              <strong>Advocacy in the report</strong>  -  arguing the client&apos;s case
               rather than providing independent opinion
             </li>
             <li>
-              <strong>Contingency or success fees</strong> — experts must not have a
+              <strong>Contingency or success fees</strong>  -  experts must not have a
               financial interest in the outcome (CPR Part 35)
             </li>
             <li>
-              <strong>Inadequate PI insurance</strong> — or refusal to confirm cover
+              <strong>Inadequate PI insurance</strong>  -  or refusal to confirm cover
             </li>
             <li>
-              <strong>No prior litigation experience</strong> — academic economists
+              <strong>No prior litigation experience</strong>  -  academic economists
               without tribunal testimony may struggle under cross-examination
             </li>
             <li>
-              <strong>Failure to disclose material instructions</strong> — or selective
+              <strong>Failure to disclose material instructions</strong>  -  or selective
               presentation of documents
             </li>
             <li>
-              <strong>Unwillingness to engage in joint expert process</strong> — where
+              <strong>Unwillingness to engage in joint expert process</strong>  -  where
               SJE or CPR 35.12 meeting is directed
             </li>
             <li>
-              <strong>Practising outside area of expertise</strong> — e.g. a general
+              <strong>Practising outside area of expertise</strong>  -  e.g. a general
               accountant without forensic damages experience instructed on complex
               arbitration DCF
             </li>
             <li>
-              <strong>Conflict of interest</strong> — prior advisory relationship with
+              <strong>Conflict of interest</strong>  -  prior advisory relationship with
               the opposing party without disclosure
             </li>
           </ul>

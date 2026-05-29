@@ -1,4 +1,4 @@
-# SEO Architecture — damagesexpertwitness.co.uk
+# SEO Architecture  -  damagesexpertwitness.co.uk
 
 **Site:** https://www.damagesexpertwitness.co.uk  
 **Audience:** UK solicitors, barristers, law firms, and international arbitration counsel instructing damages expert witnesses  
@@ -7,7 +7,7 @@
 
 This document is the canonical SEO blueprint for DamagesExpertWitness.co.uk. It governs keyword targeting, content clusters, internal linking, structured data, GEO (generative engine optimization), off-page activity, competitor monitoring, the `.co.uk` domain strategy, and deployment.
 
-**Structural differentiator:** `/practice-areas` separates PI, clinical negligence, commercial litigation, and international arbitration into dedicated audience hubs — a structure no competitor in the monitoring set currently uses. This is the primary IA and internal-linking advantage.
+**Structural differentiator:** `/practice-areas` separates PI, clinical negligence, commercial litigation, and international arbitration into dedicated audience hubs  -  a structure no competitor in the monitoring set currently uses. This is the primary IA and internal-linking advantage.
 
 ---
 
@@ -32,7 +32,7 @@ This document is the canonical SEO blueprint for DamagesExpertWitness.co.uk. It 
 
 ## 1. Keyword strategy
 
-### Tier 1 — Transactional
+### Tier 1  -  Transactional
 
 | Keyword |
 |---------|
@@ -47,7 +47,7 @@ This document is the canonical SEO blueprint for DamagesExpertWitness.co.uk. It 
 | forensic accountant damages expert UK |
 | special damages expert witness UK |
 
-### Tier 2 — Informational
+### Tier 2  -  Informational
 
 | Keyword |
 |---------|
@@ -62,7 +62,7 @@ This document is the canonical SEO blueprint for DamagesExpertWitness.co.uk. It 
 | but-for test commercial damages UK |
 | international arbitration quantum expert |
 
-### Tier 3 — Long-tail / case type
+### Tier 3  -  Long-tail / case type
 
 | Keyword |
 |---------|
@@ -328,7 +328,7 @@ flowchart TB
 | `commercial-damages-but-for-guide` | Commercial Damages & the But-For Methodology: Solicitor Guide | `commercial-loss-profits` |
 | `international-arbitration-quantum` | Quantum of Damages in International Arbitration: A Solicitor's Guide | `international-arbitration-quantum` |
 | `clinical-negligence-quantum-guide` | Clinical Negligence Quantum: Expert Evidence Guide | `future-care-costs` |
-| `single-joint-expert-damages` | Single Joint Expert in Damages Cases: A Solicitor's Guide | *(none — procedural)* |
+| `single-joint-expert-damages` | Single Joint Expert in Damages Cases: A Solicitor's Guide | *(none  -  procedural)* |
 
 **URL note:** GEO and informal references to `/guides/loss-of-earnings` canonicalize to `/guides/loss-of-earnings-ogden-tables-guide`.
 
@@ -411,7 +411,7 @@ flowchart TB
 
 ## 3. Internal linking rules
 
-### Rule 1 — `/types-of-damages` links to:
+### Rule 1  -  `/types-of-damages` links to:
 
 - All 4 `/practice-areas/[slug]` pages
 - Relevant `/case-types/[slug]` pages (PI heads, commercial heads)
@@ -420,7 +420,7 @@ flowchart TB
 - `/services` (and section anchors where cited)
 - `/contact`
 
-### Rule 2 — Every `/practice-areas/[slug]` links to:
+### Rule 2  -  Every `/practice-areas/[slug]` links to:
 
 - Relevant `/case-types/[slug]` (at least 3)
 - Relevant `/services` sections (hash anchors)
@@ -429,7 +429,7 @@ flowchart TB
 - `/qualifications`
 - `/contact`
 
-### Rule 3 — Every `/case-types/[slug]` links to:
+### Rule 3  -  Every `/case-types/[slug]` links to:
 
 - Its parent `/practice-areas/[slug]`
 - Relevant `/services` section (hash anchor)
@@ -439,7 +439,7 @@ flowchart TB
 - `/how-to-instruct`
 - `/contact`
 
-### Rule 4 — Every `/guides/[slug]` links to:
+### Rule 4  -  Every `/guides/[slug]` links to:
 
 - `/guides` (hub)
 - Relevant `/practice-areas`
@@ -449,14 +449,14 @@ flowchart TB
 - `/qualifications`
 - `/contact`
 
-### Rule 5 — `/glossary` terms link to:
+### Rule 5  -  `/glossary` terms link to:
 
 - Most relevant `/practice-areas`
 - Most relevant `/case-types`
 - `/types-of-damages` for damage-type terms
 - `/guides` for methodology terms
 
-### Rule 6 — Homepage links to:
+### Rule 6  -  Homepage links to:
 
 - All 8 `/services` sections (via cards → `#anchor`)
 - `/types-of-damages`
@@ -488,10 +488,10 @@ Use the `relatedLinks?: { href: string; label: string }[]` field on content type
 
 **Footer 4 columns** (`src/components/layout/Footer.tsx`):
 
-- **Col 1 — Services:** Loss of Earnings, Pension Loss, Future Care Costs, Commercial Lost Profits, IP Infringement, Professional Negligence, Arbitration Quantum, Expert Determination
-- **Col 2 — Practice Areas:** Personal Injury, Clinical Negligence, Commercial Litigation, International Arbitration, All Case Types →
-- **Col 3 — Resources:** Solicitor Guides, Glossary, FAQ, Fees Guide, How to Instruct, Types of Damages
-- **Col 4 — About:** Our Experts, Qualifications, Contact, Instruct an Expert
+- **Col 1  -  Services:** Loss of Earnings, Pension Loss, Future Care Costs, Commercial Lost Profits, IP Infringement, Professional Negligence, Arbitration Quantum, Expert Determination
+- **Col 2  -  Practice Areas:** Personal Injury, Clinical Negligence, Commercial Litigation, International Arbitration, All Case Types →
+- **Col 3  -  Resources:** Solicitor Guides, Glossary, FAQ, Fees Guide, How to Instruct, Types of Damages
+- **Col 4  -  About:** Our Experts, Qualifications, Contact, Instruct an Expert
 
 ---
 
@@ -537,7 +537,7 @@ flowchart TD
 | ProfessionalService | Homepage | `professionalServiceSchema` | `JsonLd` |
 | WebSite + SearchAction | Homepage | `websiteSchema` (glossary search URL) | `JsonLd` |
 | Service (×8) | `/services` | `serviceNode(id, name, desc)` | `JsonLd` |
-| Article (pillar) | `/types-of-damages` | `articleSchema` — authoritative long-form | `JsonLd` |
+| Article (pillar) | `/types-of-damages` | `articleSchema`  -  authoritative long-form | `JsonLd` |
 | Article (×6) | `/guides/[slug]` | `articleSchema` + `aboutServiceId` | `JsonLd` |
 | Person (×3) | `/experts` | `personSchema` | `JsonLd` |
 | FAQPage | `/faq` (12 Q&As) | `faqPageSchema` | `JsonLd` |
@@ -608,10 +608,10 @@ AI systems and answer engines should cite structured, definition-first content. 
 
 | # | Asset | Page | Location / format |
 |---|-------|------|-------------------|
-| 1 | Types of damages master table | `/types-of-damages` | H2: Types of Damages by Category — columns: Category, Definition, Examples, Expert needed? |
-| 2 | General vs special damages comparison | `/types-of-damages` | H2: General Damages vs Special Damages — columns: Type, Definition, Examples, Quantification |
-| 3 | PI damages heads table | `/types-of-damages` | H2: Personal Injury Damages — Key Heads — columns: Head, Type, How Quantified |
-| 4 | Commercial damages heads table | `/types-of-damages` | H2: Commercial Damages — Key Heads — columns: Head, Type, Method |
+| 1 | Types of damages master table | `/types-of-damages` | H2: Types of Damages by Category  -  columns: Category, Definition, Examples, Expert needed? |
+| 2 | General vs special damages comparison | `/types-of-damages` | H2: General Damages vs Special Damages  -  columns: Type, Definition, Examples, Quantification |
+| 3 | PI damages heads table | `/types-of-damages` | H2: Personal Injury Damages  -  Key Heads  -  columns: Head, Type, How Quantified |
+| 4 | Commercial damages heads table | `/types-of-damages` | H2: Commercial Damages  -  Key Heads  -  columns: Head, Type, Method |
 | 5 | Ogden Tables explanation | `/guides/loss-of-earnings-ogden-tables-guide` | Multiplier/multiplicand; Tables 1–8; discount rate -0.25% |
 | 6 | Discount rate explanation | `/types-of-damages` + `/glossary#discount-rate` | H2: Discount Rate & Present Value; definition-first glossary entry |
 | 7 | Multiplier/multiplicand method | `/case-types/loss-of-earnings-personal-injury` | FAQ + body: annual multiplicand × Ogden multiplier |
@@ -619,7 +619,7 @@ AI systems and answer engines should cite structured, definition-first content. 
 | 9 | Vento bands table | `/case-types/employment-discrimination-loss` | Lower / middle / upper bands (2025 figures) |
 | 10 | Schedule of Loss structure | `/guides/schedule-of-loss-expert-evidence` | Past vs future losses; Counter-Schedule; expert contribution |
 | 11 | Glossary (38 terms) | `/glossary` | Definition-first; one block per term; client-side search |
-| 12 | SJE vs PAE comparison | `/how-to-instruct` | Step 4 — two-column comparison table |
+| 12 | SJE vs PAE comparison | `/how-to-instruct` | Step 4  -  two-column comparison table |
 
 ### Homepage statistics table (supplementary GEO asset)
 
@@ -633,7 +633,7 @@ AI systems and answer engines should cite structured, definition-first content. 
 | Court framework (civil) | CPR Part 35 | Civil Procedure Rules |
 | Court framework (family) | FPR Part 25 | Family Procedure Rules |
 | Investment treaty standard | Chorzów Factory full reparation | PCIJ 1928 |
-| Accommodation costs (clinical) | George v Biggs [2023] — Roberts v Johnstone abolished | Court of Appeal |
+| Accommodation costs (clinical) | George v Biggs [2023]  -  Roberts v Johnstone abolished | Court of Appeal |
 
 ### Loss of earnings methodology table (`/services#loss-of-earnings`)
 
@@ -647,12 +647,12 @@ AI systems and answer engines should cite structured, definition-first content. 
 
 ### GEO content format rules
 
-1. **Definition first** — lead each H2 with a one-sentence legal definition before analysis.
-2. **Tables before narrative** — place comparison tables immediately under the H2.
-3. **UK citations** — include case names and years (e.g. *George v Biggs* [2023], *Hadley v Baxendale* [1854]).
-4. **Solicitor-facing tone** — practical instruction focus, not consumer FAQ.
-5. **Stable URLs** — pillar and guides are primary citation targets; use canonical URLs from `createMetadata`.
-6. **Anchor IDs** — glossary and `/types-of-damages` sections use predictable `#slug` anchors for deep links.
+1. **Definition first**  -  lead each H2 with a one-sentence legal definition before analysis.
+2. **Tables before narrative**  -  place comparison tables immediately under the H2.
+3. **UK citations**  -  include case names and years (e.g. *George v Biggs* [2023], *Hadley v Baxendale* [1854]).
+4. **Solicitor-facing tone**  -  practical instruction focus, not consumer FAQ.
+5. **Stable URLs**  -  pillar and guides are primary citation targets; use canonical URLs from `createMetadata`.
+6. **Anchor IDs**  -  glossary and `/types-of-damages` sections use predictable `#slug` anchors for deep links.
 
 ---
 
@@ -662,7 +662,7 @@ AI systems and answer engines should cite structured, definition-first content. 
 
 | Directory | URL | Action |
 |-----------|-----|--------|
-| UK Register of Expert Witnesses | https://www.jspubs.com | Submit firm listing — damages / quantum category |
+| UK Register of Expert Witnesses | https://www.jspubs.com | Submit firm listing  -  damages / quantum category |
 | Academy of Experts | https://www.academyofexperts.org | Membership / directory profile |
 | Expert Witness Institute (EWI) | https://www.ewi.org.uk | Membership listing |
 | APIL expert directory | https://www.apil.org.uk | PI quantum / forensic accountant listing |
@@ -728,7 +728,7 @@ AI systems and answer engines should cite structured, definition-first content. 
 ### Competitor diff log template
 
 ```markdown
-## YYYY-MM — Competitor review
+## YYYY-MM  -  Competitor review
 
 | Competitor | New URLs | Notable content | Backlink / PR | Case law updates |
 |------------|----------|-----------------|---------------|------------------|
@@ -767,10 +767,10 @@ AI systems and answer engines should cite structured, definition-first content. 
 
 ### Post-deployment verification
 
-1. Google Search Console — confirm UK country association for the property
+1. Google Search Console  -  confirm UK country association for the property
 2. Submit `https://www.damagesexpertwitness.co.uk/sitemap.xml`
 3. Validate canonical tags and apex redirect on a sample of URLs
-4. Bing Webmaster Tools — same sitemap and verification meta
+4. Bing Webmaster Tools  -  same sitemap and verification meta
 
 ---
 
@@ -778,9 +778,9 @@ AI systems and answer engines should cite structured, definition-first content. 
 
 ### Infrastructure
 
-- [ ] **Vercel deployment** — production branch connected; preview URLs noindex
-- [ ] **DNS** — `damagesexpertwitness.co.uk` → 301 to `www.damagesexpertwitness.co.uk` (`middleware.ts`)
-- [ ] **SSL** — HTTPS on www subdomain
+- [ ] **Vercel deployment**  -  production branch connected; preview URLs noindex
+- [ ] **DNS**  -  `damagesexpertwitness.co.uk` → 301 to `www.damagesexpertwitness.co.uk` (`middleware.ts`)
+- [ ] **SSL**  -  HTTPS on www subdomain
 
 ### Environment variables (`.env.example`)
 
@@ -807,9 +807,9 @@ AI systems and answer engines should cite structured, definition-first content. 
 
 ### Technical SEO files
 
-- [ ] `public/sitemap.xml` — generated via `npm run seo:generate` (Appendix B priorities)
-- [ ] `public/robots.txt` — generated; disallows `/thank-you`, `/api/`
-- [ ] `npm run seo:verify` — inventory drift check
+- [ ] `public/sitemap.xml`  -  generated via `npm run seo:generate` (Appendix B priorities)
+- [ ] `public/robots.txt`  -  generated; disallows `/thank-you`, `/api/`
+- [ ] `npm run seo:verify`  -  inventory drift check
 - [ ] Wire `JsonLd` on all page templates (Section 4)
 - [ ] `createMetadata` per route
 - [ ] Internal linking via `seo-internal-links.ts` + `RelatedLinks`
@@ -817,13 +817,13 @@ AI systems and answer engines should cite structured, definition-first content. 
 
 ### Social and directories
 
-- [ ] **LinkedIn:** DamagesExpertWitness company page — URL in `LINKEDIN_URL` (`src/lib/site.ts`)
+- [ ] **LinkedIn:** DamagesExpertWitness company page  -  URL in `LINKEDIN_URL` (`src/lib/site.ts`)
 - [ ] Submit to **jspubs**, **Academy of Experts**, **EWI**, **APIL**, **AvMA** (Section 6)
 
 ### Post-launch
 
-- [ ] Google Search Console — submit sitemap; confirm UK geotargeting
-- [ ] Bing Webmaster Tools — submit sitemap
+- [ ] Google Search Console  -  submit sitemap; confirm UK geotargeting
+- [ ] Bing Webmaster Tools  -  submit sitemap
 - [ ] Validate structured data (Rich Results Test) on homepage, `/types-of-damages`, one practice-area, one case-type, one guide
 - [ ] Confirm apex redirect and canonical tags on sample URLs
 
@@ -859,10 +859,10 @@ Both files are **generated by a Node script** (not hand-edited) so the URL list 
 
 Source: `src/lib/seo/publicUrlInventory.ts`
 
-- **Static routes** — `APP_STATIC_PATHS` (indexable marketing pages)
-- **Dynamic routes** — slugs from `src/data/practice-areas.ts`, `case-types.ts`, `guides.ts`
-- **Excluded from sitemap** — `/contact`, `/thank-you`, `/privacy`, `/terms`
-- Canonical host — `https://www.damagesexpertwitness.co.uk` (or `NEXT_PUBLIC_SITE_URL`)
+- **Static routes**  -  `APP_STATIC_PATHS` (indexable marketing pages)
+- **Dynamic routes**  -  slugs from `src/data/practice-areas.ts`, `case-types.ts`, `guides.ts`
+- **Excluded from sitemap**  -  `/contact`, `/thank-you`, `/privacy`, `/terms`
+- Canonical host  -  `https://www.damagesexpertwitness.co.uk` (or `NEXT_PUBLIC_SITE_URL`)
 
 ### Commands
 
@@ -875,7 +875,7 @@ npm run seo:verify     # Fail if sitemap <loc> entries drift from inventory
 
 **After adding a new static route:** add its path to `APP_STATIC_PATHS`, then run `seo:generate`.
 
-Next.js `src/app/sitemap.ts` and `src/app/robots.ts` are **not used** — static files in `public/` are served at `/sitemap.xml` and `/robots.txt`.
+Next.js `src/app/sitemap.ts` and `src/app/robots.ts` are **not used**  -  static files in `public/` are served at `/sitemap.xml` and `/robots.txt`.
 
 ---
 
@@ -957,7 +957,7 @@ Use `createMetadata({ title, description, path })` from `src/lib/metadata.ts` on
 | `/glossary` | Damages Expert Witness Glossary \| Key UK Legal & Finance Terms | 38 definitions |
 | `/contact` | Instruct a Damages Expert Witness \| DamagesExpertWitness.co.uk | Lead form; match within 1 business day |
 
-**Dynamic pages:** append context to title — e.g. `{H1} | DamagesExpertWitness UK` — keep under ~60 characters where possible.
+**Dynamic pages:** append context to title  -  e.g. `{H1} | DamagesExpertWitness UK`  -  keep under ~60 characters where possible.
 
 **Practice area examples:**
 
@@ -997,8 +997,8 @@ Snapshot as of May 2026.
 | SJE vs PAE comparison table | Pending | `/how-to-instruct` |
 | Homepage hub links (Rule 6) | Pending | `src/app/page.tsx` |
 | `.co.uk` GSC geotargeting verification | Pending | Post-deploy manual step |
-| Off-page directory submissions | Pending | Section 6 — marketing task |
-| Competitor monitoring log | Pending | Section 7 — monthly cadence |
+| Off-page directory submissions | Pending | Section 6  -  marketing task |
+| Competitor monitoring log | Pending | Section 7  -  monthly cadence |
 
 **Next recommended actions (implementation):**
 

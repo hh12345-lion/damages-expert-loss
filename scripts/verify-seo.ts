@@ -41,7 +41,7 @@ async function main() {
     sitemapXml = await readFile(sitemapPath, "utf8");
   } catch {
     console.error(
-      "Missing public/sitemap.xml — run npm run seo:generate first."
+      "Missing public/sitemap.xml  -  run npm run seo:generate first."
     );
     process.exit(1);
   }
@@ -50,7 +50,7 @@ async function main() {
     robotsTxt = await readFile(robotsPath, "utf8");
   } catch {
     console.error(
-      "Missing public/robots.txt — run npm run seo:generate first."
+      "Missing public/robots.txt  -  run npm run seo:generate first."
     );
     process.exit(1);
   }

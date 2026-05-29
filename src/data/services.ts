@@ -7,7 +7,7 @@ export const services: ServiceItem[] = [
     shortDescription:
       "Past and future loss of earnings in personal injury and employment claims using Ogden Tables.",
     description:
-      "Our forensic accountants quantify past and future loss of earnings in personal injury, clinical negligence, and employment tribunal claims. Analysis covers net earnings, self-employed income, director remuneration, Smith v Manchester awards, and handicap on the open labour market — all capitalised using the Ogden Tables and prescribed discount rate.",
+      "Our forensic accountants quantify past and future loss of earnings in personal injury, clinical negligence, and employment tribunal claims. Analysis covers net earnings, self-employed income, director remuneration, Smith v Manchester awards, and handicap on the open labour market  -  all capitalised using the Ogden Tables and prescribed discount rate.",
     methodology: [
       { step: "Document review", detail: "Tax returns, P60s, accounts, and employment records for 3–5 years pre-incident" },
       { step: "Maintainable earnings", detail: "Establish pre-incident net earnings baseline adjusted for tax and NI" },
@@ -22,7 +22,7 @@ export const services: ServiceItem[] = [
     shortDescription:
       "Defined benefit and contribution pension loss using Ogden Tables H and actuarial evidence.",
     description:
-      "Pension loss quantification for personal injury and fatal accident claims — covering defined benefit schemes, defined contribution employer contributions, and state pension loss. Complex schemes may require actuarial CETV analysis alongside forensic accounting.",
+      "Pension loss quantification for personal injury and fatal accident claims  -  covering defined benefit schemes, defined contribution employer contributions, and state pension loss. Complex schemes may require actuarial CETV analysis alongside forensic accounting.",
     methodology: [
       { step: "Scheme analysis", detail: "Review pension statements, scheme rules, and membership history" },
       { step: "Loss quantification", detail: "Calculate annual pension loss using Ogden Tables 35–38" },
@@ -82,7 +82,7 @@ export const services: ServiceItem[] = [
     shortDescription:
       "But-for counterfactuals, SAAMCo scope, and loss of chance for adviser negligence claims.",
     description:
-      "Damages quantification for solicitor, accountant, and financial adviser negligence — applying but-for methodology, SAAMCo scope of duty limits, and Allied Maples loss of chance principles.",
+      "Damages quantification for solicitor, accountant, and financial adviser negligence  -  applying but-for methodology, SAAMCo scope of duty limits, and Allied Maples loss of chance principles.",
     methodology: [
       { step: "Scope of duty", detail: "Identify losses within SAAMCo scope of the retainer" },
       { step: "Counterfactual", detail: "Model position had professional performed competently" },
@@ -97,7 +97,7 @@ export const services: ServiceItem[] = [
     shortDescription:
       "ICC, LCIA, ICSID quantum experts for investment treaty and cross-border disputes.",
     description:
-      "Quantum economists and forensic accountants for international arbitration — applying Chorzów Factory full reparation, DCF methodology, fair market value, and IBA Rules on Evidence standards across English law and civil law systems.",
+      "Quantum economists and forensic accountants for international arbitration  -  applying Chorzów Factory full reparation, DCF methodology, fair market value, and IBA Rules on Evidence standards across English law and civil law systems.",
     methodology: [
       { step: "Applicable law", detail: "Identify substantive damages law governing the dispute" },
       { step: "Valuation method", detail: "Select FMV, DCF, or lost profits approach" },
@@ -112,7 +112,7 @@ export const services: ServiceItem[] = [
     shortDescription:
       "Independent quantum determination for contractual disputes outside court.",
     description:
-      "Forensic accountants appointed as expert determiners to resolve quantum disputes under contractual expert determination clauses — providing binding or non-binding assessments of damages without full litigation.",
+      "Forensic accountants appointed as expert determiners to resolve quantum disputes under contractual expert determination clauses  -  providing binding or non-binding assessments of damages without full litigation.",
     methodology: [
       { step: "Terms review", detail: "Analyse expert determination clause and procedural rules" },
       { step: "Submissions", detail: "Review party submissions and supporting financial evidence" },
