@@ -352,7 +352,7 @@ const guides: GuidePage[] = [
       { href: "/glossary/single-joint-expert-sje", label: "Glossary: Single Joint Expert" },
       { href: "/how-to-instruct", label: "How to Instruct an Expert" },
       { href: "/qualifications", label: "Expert Qualifications" },
-      { href: "/faq", label: "Damages Expert Witness FAQ" },
+      { href: "/glossary#discount-rate", label: "Glossary: Discount Rate" },
     ],
   },
 ];

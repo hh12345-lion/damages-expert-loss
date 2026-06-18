@@ -33,7 +33,6 @@ const nextSteps = [
 
 const helpfulLinks = [
   { href: "/how-to-instruct", label: "How to Instruct" },
-  { href: "/fees", label: "Expert Witness Fees" },
   { href: "/qualifications", label: "Qualifications" },
   { href: "/types-of-damages", label: "Types of Damages" },
 ];

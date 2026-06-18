@@ -475,7 +475,9 @@ export default function TypesOfDamagesPage() {
             <Link href="/glossary#civil-liability-act-2018">
               Civil Liability Act 2018
             </Link>{" "}
-            in our glossary, and the <Link href="/faq">FAQ on discount rate impact</Link>.
+            in our glossary, and the{" "}
+            <Link href="/types-of-damages#discount-rate">discount rate section</Link>{" "}
+            of this guide.
           </p>
 
           <h2 id="interest-on-damages">Interest on Damages</h2>

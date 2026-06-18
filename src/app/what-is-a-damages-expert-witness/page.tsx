@@ -22,7 +22,6 @@ const relatedLinks = [
   { href: "/qualifications", label: "Expert Qualifications" },
   { href: "/how-to-instruct", label: "How to Instruct an Expert" },
   { href: "/services", label: "Damages Expert Witness Services" },
-  { href: "/faq", label: "Damages Expert Witness FAQ" },
   { href: "/contact", label: "Instruct an Expert Witness" },
 ];
 
@@ -198,8 +197,7 @@ export default function WhatIsDamagesExpertWitnessPage() {
           </ul>
           <p>
             Use our{" "}
-            <Link href="/how-to-instruct">step-by-step instruction guide</Link>,{" "}
-            <Link href="/fees">fees guide</Link>, and{" "}
+            <Link href="/how-to-instruct">step-by-step instruction guide</Link> and{" "}
             <Link href="/case-types">case types hub</Link> to identify the right
             expert for your matter. Submit an instruction via{" "}
             <Link href="/contact">contact</Link> for a match within one business day.

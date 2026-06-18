@@ -16,7 +16,7 @@ export const metadata: Metadata = createMetadata({
   title:
     "Damages Expert Witness UK | Quantum, Loss of Earnings & Commercial Damages",
   description:
-    "Find a qualified damages expert witness in the UK. Forensic accountants and quantum experts for personal injury, commercial disputes, clinical negligence, and international arbitration. CPR Part 35 compliant.",
+    "UK-only damages expert witness referral for solicitors and counsel. Forensic accountants and quantum experts for personal injury, commercial disputes, clinical negligence, and UK-seated arbitration. CPR Part 35 compliant.",
   path: "/",
 });
 

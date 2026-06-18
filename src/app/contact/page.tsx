@@ -10,7 +10,7 @@ export const metadata = createMetadata({
   title:
     "Instruct a Damages Expert Witness | DamagesExpertWitness.co.uk",
   description:
-    "Submit your case details to be matched with a qualified UK damages expert witness. CPR Part 35 compliant. Personal injury, commercial, and arbitration specialists available.",
+    "Submit your case details to be matched with a qualified UK damages expert witness. UK solicitors and counsel only. CPR Part 35 compliant. Personal injury, commercial, and arbitration specialists available.",
   path: "/contact",
 });
 
@@ -32,7 +32,7 @@ export default function ContactPage() {
       />
       <PageHero
         title="Instruct a Damages Expert Witness"
-        subtitle="Submit your case details and we will match you with a qualified UK quantum specialist."
+        subtitle="Submit your case details and we will match you with a qualified UK quantum specialist. This service is for United Kingdom matters only."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Contact" },

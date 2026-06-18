@@ -19,7 +19,6 @@ export const metadata = createMetadata({
 
 const relatedLinks = [
   { href: "/qualifications", label: "Expert Qualifications" },
-  { href: "/fees", label: "Expert Witness Fees" },
   { href: "/guides/single-joint-expert-damages", label: "Single Joint Expert Guide" },
   { href: "/what-is-a-damages-expert-witness", label: "What Is a Damages Expert Witness?" },
   { href: "/contact", label: "Instruct an Expert Witness" },
@@ -239,10 +238,10 @@ export default function HowToInstructPage() {
           </ol>
 
           <p>
-            For fee expectations and cost recovery, see the{" "}
-            <Link href="/fees">damages expert witness fees guide</Link>. For CPR duties
-            and credentials, see <Link href="/qualifications">qualifications</Link> and
-            the <Link href="/faq">FAQ</Link>.
+            For fee expectations and cost recovery, agree terms in your letter of
+            instruction before work begins. For CPR duties and credentials, see{" "}
+            <Link href="/qualifications">qualifications</Link> and our{" "}
+            <Link href="/glossary">glossary</Link>.
           </p>
 
           <RelatedLinks links={relatedLinks} />

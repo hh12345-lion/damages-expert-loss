@@ -47,7 +47,7 @@ const caseTypeDefaults: Record<string, RelatedLink[]> = {
   "employment-discrimination-loss": [
     { href: "/practice-areas/commercial-damages", label: "Commercial Litigation" },
     { href: "/services#loss-of-earnings", label: "Loss of Earnings" },
-    { href: "/fees", label: "Expert Witness Fees" },
+    { href: "/qualifications", label: "Expert Qualifications" },
   ],
   "investment-treaty-damages": [
     { href: "/practice-areas/international-arbitration", label: "International Arbitration" },

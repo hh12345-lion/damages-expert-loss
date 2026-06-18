@@ -31,15 +31,17 @@ export default function HomePage() {
       <JsonLd data={graph} />
       <PageHero
         title="Damages Expert Witness UK"
-        subtitle="Connect with qualified forensic accountants, actuaries, and quantum specialists for personal injury, commercial litigation, clinical negligence, and international arbitration."
+        subtitle="UK-only expert witness matching for solicitors and counsel. Connect with qualified forensic accountants, actuaries, and quantum specialists for personal injury, commercial litigation, clinical negligence, and UK-seated arbitration."
       />
       <Section>
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-lg leading-relaxed text-body">
-            DamagesExpertWitness.co.uk helps UK solicitors, barristers, and
-            international arbitration counsel instruct the right quantum expert
+            DamagesExpertWitness.co.uk is a United Kingdom service for UK solicitors,
+            barristers, and arbitration counsel instructing quantum experts under English,
+            Welsh, Scottish, and Northern Irish law. We match you with the right expert
             for every head of loss  -  from Ogden Table earnings calculations to
-            but-for commercial models and ICSID investment treaty damages.
+            but-for commercial models and ICSID investment treaty damages in UK-seated
+            proceedings.
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">

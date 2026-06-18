@@ -19,10 +19,8 @@ export const metadata = createMetadata({
 });
 
 const relatedLinks = [
-  { href: "/experts", label: "Our Expert Witnesses" },
   { href: "/what-is-a-damages-expert-witness", label: "What Is a Damages Expert Witness?" },
   { href: "/how-to-instruct", label: "How to Instruct an Expert" },
-  { href: "/fees", label: "Expert Witness Fees" },
   { href: "/glossary#cpr-part-35", label: "CPR Part 35 (Glossary)" },
   { href: "/contact", label: "Instruct an Expert Witness" },
 ];
@@ -166,8 +164,8 @@ export default function QualificationsPage() {
           </ul>
           <p>
             Request a CV, list of recent cases (anonymised if necessary), and sample
-            report structure before confirming instruction. Our panel profiles are on the{" "}
-            <Link href="/experts">experts page</Link>.
+            report structure before confirming instruction. Example panel profiles are
+            shown below.
           </p>
 
           <h2>CPR Part 35 and FPR Part 25</h2>

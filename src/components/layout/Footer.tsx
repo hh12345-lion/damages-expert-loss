@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { footerColumns } from "@/data/nav";
 import { CookieSettingsButton } from "@/components/cookies/CookieSettingsButton";
-import { SITE_EMAIL } from "@/lib/site";
+import { SITE_EMAIL, SITE_REGION_LABEL, SITE_SCOPE_NOTE } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -31,9 +31,11 @@ export function Footer() {
 
         <div className="mt-10 border-t border-white/20 pt-8">
           <p className="text-sm text-white/70">
-            DamagesExpertWitness.co.uk connects solicitors with damages expert
-            witnesses. We are not a law firm and do not provide legal advice.
+            DamagesExpertWitness.co.uk connects UK solicitors with damages expert
+            witnesses across England and Wales, Scotland, and Northern Ireland. We
+            are not a law firm and do not provide legal advice.
           </p>
+          <p className="mt-3 text-sm text-white/70">{SITE_SCOPE_NOTE}</p>
           <p className="mt-3 text-sm text-white/80">
             <a
               href={`mailto:${SITE_EMAIL}`}
@@ -55,7 +57,7 @@ export function Footer() {
             <CookieSettingsButton />
           </div>
           <p className="mt-4 text-sm text-white/60">
-            © 2025 DamagesExpertWitness. England and Wales.
+            © 2025 DamagesExpertWitness. {SITE_REGION_LABEL}.
           </p>
         </div>
       </div>

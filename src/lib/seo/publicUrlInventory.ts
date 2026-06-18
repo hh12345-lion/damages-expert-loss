@@ -15,10 +15,7 @@ export const APP_STATIC_PATHS = [
   "/what-is-a-damages-expert-witness",
   "/qualifications",
   "/how-to-instruct",
-  "/fees",
-  "/faq",
   "/guides",
-  "/experts",
   "/glossary",
   "/cookies",
 ] as const;
@@ -81,16 +78,11 @@ export function getSitemapPriority(path: string): number {
   if (path === "/case-types") return 0.92;
   if (path === "/what-is-a-damages-expert-witness") return 0.9;
   if (path.startsWith("/practice-areas/")) return 0.9;
-  if (
-    path === "/qualifications" ||
-    path === "/how-to-instruct" ||
-    path === "/fees"
-  ) {
+  if (path === "/qualifications" || path === "/how-to-instruct") {
     return 0.88;
   }
   if (path.startsWith("/case-types/")) return 0.88;
-  if (path === "/faq" || path === "/guides") return 0.87;
-  if (path === "/experts") return 0.8;
+  if (path === "/guides") return 0.87;
   if (path.startsWith("/guides/")) return 0.8;
   if (path === "/glossary") return 0.75;
   if (path === "/cookies") return 0.5;
