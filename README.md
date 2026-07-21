@@ -7,7 +7,7 @@ Lead-generation website for UK solicitors, barristers, and international arbitra
 - Next.js 16 (App Router), TypeScript, Tailwind CSS v4
 - Static export-ready build (no custom backend)
 - Formspree contact form
-- Apex → www redirect via `middleware.ts`
+- Domain canonicalization (www/apex) handled by Netlify Primary domain setting
 
 ## Setup
 
