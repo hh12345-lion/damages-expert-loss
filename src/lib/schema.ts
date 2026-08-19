@@ -87,16 +87,12 @@ export const organizationSchema = {
     "@type": "ContactPoint",
     contactType: "customer service",
     email: SITE_EMAIL,
-    areaServed: "GB",
+    areaServed: "Worldwide",
     availableLanguage: ["English"],
   },
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "GB",
-  },
   areaServed: {
-    "@type": "Country",
-    name: "United Kingdom",
+    "@type": "Place",
+    name: "Worldwide",
   },
   sameAs: [LINKEDIN_URL],
 };
@@ -109,7 +105,7 @@ export function professionalServiceSchema(
     "@id": `${SITE_URL}/#service`,
     name: "Damages Expert Witness",
     provider: { "@id": `${SITE_URL}/#organization` },
-    areaServed: "United Kingdom",
+    areaServed: "Worldwide",
     serviceType: "Damages Expert Witness",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -153,7 +149,7 @@ export function serviceNode(
     name,
     description,
     provider: { "@id": `${SITE_URL}/#organization` },
-    areaServed: "United Kingdom",
+    areaServed: "Worldwide",
   };
 }
 

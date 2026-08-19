@@ -7,17 +7,19 @@ export const SITE_EMAIL = "contact@damagesexpertwitness.co.uk";
 export const LINKEDIN_URL =
   "https://www.linkedin.com/company/damages-expert-witness";
 
-/** Shown in footer and key copy — UK-only service, no geo banners */
-export const SITE_REGION_LABEL = "United Kingdom";
+/** Shown in footer and key copy — global service scope */
+export const SITE_REGION_LABEL = "Global";
 export const SITE_SCOPE_NOTE =
-  "This service is for UK solicitors, barristers, and counsel instructing damages expert witnesses in England and Wales, Scotland, and Northern Ireland, and for UK-seated international arbitration. We do not provide expert witness referral services outside the United Kingdom.";
+  "We connect legal teams worldwide with qualified damages expert witnesses for litigation, arbitration, and expert determination. We are not a law firm and do not provide legal advice.";
 
 export const COLORS = {
-  primary: "#4A1942",
-  accent: "#C9A84C",
-  background: "#FFFFFF",
-  sectionAlt: "#FAF8FB",
-  border: "#E8E0EC",
-  heading: "#4A1942",
-  body: "#374151",
+  primary: "#2D1B4E",
+  primaryDark: "#1A0F2E",
+  accent: "#B8860B",
+  surfaceDark: "#1A0F2E",
+  background: "#FAF7F2",
+  sectionAlt: "#FAF7F2",
+  border: "#DDD0C0",
+  heading: "#1A0F2E",
+  body: "#4A4458",
 } as const;

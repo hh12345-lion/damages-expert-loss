@@ -51,7 +51,7 @@ export default function PrivacyPage() {
           <h2>Who We Are</h2>
           <p>
             {SITE_NAME} operates damagesexpertwitness.co.uk as a referral service
-            connecting UK solicitors, barristers, and counsel with qualified damages
+            connecting legal teams with qualified damages
             expert witnesses. We are not a law firm and do not provide legal advice. For
             data protection enquiries, contact us at{" "}
             <a href={`mailto:${SITE_EMAIL}`}>{SITE_EMAIL}</a>.
@@ -100,10 +100,10 @@ export default function PrivacyPage() {
           <h2>Sharing Your Data</h2>
           <p>
             We may share your contact and case details with expert witnesses on our
-            panel solely for the purpose of responding to your instruction request. We
-            use Formspree (or equivalent form processor) to transmit contact form
-            submissions; their privacy policy governs data handled in transit. We do not
-            sell personal data to third parties.
+            panel solely for the purpose of responding to your instruction request.
+            We use secure form processing (Google Sheets and/or webhook delivery) to
+            transmit contact form submissions. We do not sell personal data to third
+            parties.
           </p>
           <p>
             We may disclose data where required by law, court order, or regulatory

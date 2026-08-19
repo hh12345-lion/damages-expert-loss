@@ -9,9 +9,9 @@ import { guides } from "@/data/guides";
 
 export const metadata = createMetadata({
   title:
-    "Solicitor Guides: Damages Expert Witnesses UK | Quantum & Loss Assessment",
+    "Solicitor Guides: Damages Expert Witnesses | Quantum & Loss Assessment",
   description:
-    "In-depth guides for UK solicitors on damages expert witnesses  -  loss of earnings, clinical negligence quantum, commercial damages, and international arbitration.",
+    "In-depth guides on damages expert witnesses — loss of earnings, clinical negligence quantum, commercial damages, and international arbitration.",
   path: "/guides",
 });
 

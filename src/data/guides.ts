@@ -6,7 +6,7 @@ const guides: GuidePage[] = [
     title: "Loss of Earnings & Ogden Tables Guide",
     h1: "Loss of Earnings & the Ogden Tables: A Solicitor's Guide",
     metaTitle:
-      "Loss of Earnings & Ogden Tables Guide UK | Damages Expert Witness",
+      "Loss of Earnings & Ogden Tables Guide | Damages Expert Witness",
     metaDescription:
       "Solicitor's guide to loss of earnings quantification: multiplier/multiplicand method, Ogden Tables 1–8, discount rate, Smith v Manchester, and self-employed claims.",
     aboutServiceId: "loss-of-earnings",
@@ -65,9 +65,9 @@ const guides: GuidePage[] = [
     title: "Schedule of Loss Expert Evidence Guide",
     h1: "Preparing a Schedule of Loss: Expert Evidence Guide",
     metaTitle:
-      "Schedule of Loss Expert Evidence Guide UK | Damages Expert Witness",
+      "Schedule of Loss Expert Evidence Guide | Damages Expert Witness",
     metaDescription:
-      "How UK solicitors prepare Schedules of Loss with quantum expert evidence: past and future losses, Counter-Schedules, updating before trial, and CPR Part 35 compliance.",
+      "How solicitors prepare Schedules of Loss with quantum expert evidence: past and future losses, Counter-Schedules, updating before trial, and CPR Part 35 compliance.",
     aboutServiceId: "loss-of-earnings",
     paragraphs: [
       "The Schedule of Loss is the central document anchoring quantum in personal injury, clinical negligence, and employment claims. It sets out every pecuniary head of claim with supporting calculations, enabling the court, defendants, and experts to identify the issues in dispute.",
@@ -124,7 +124,7 @@ const guides: GuidePage[] = [
     title: "Commercial Damages But-For Guide",
     h1: "Commercial Damages & the But-For Methodology: Solicitor Guide",
     metaTitle:
-      "Commercial Damages But-For Methodology Guide UK | Damages Expert Witness",
+      "Commercial Damages But-For Methodology Guide | Damages Expert Witness",
     metaDescription:
       "Solicitor's guide to commercial damages quantification: but-for test, expectation vs reliance loss, Hadley v Baxendale remoteness, mitigation, and expert report structure.",
     aboutServiceId: "commercial-loss-profits",
@@ -183,7 +183,7 @@ const guides: GuidePage[] = [
     title: "International Arbitration Quantum Guide",
     h1: "Quantum of Damages in International Arbitration: A Solicitor's Guide",
     metaTitle:
-      "International Arbitration Quantum Guide UK | Damages Expert Witness",
+      "International Arbitration Quantum Guide | Damages Expert Witness",
     metaDescription:
       "Solicitor's guide to damages quantification in ICC, LCIA, and ICSID arbitration: IBA Rules, hot-tubbing, Chorzów Factory, DCF methodology, and tribunal expert practice.",
     aboutServiceId: "international-arbitration-quantum",
@@ -242,7 +242,7 @@ const guides: GuidePage[] = [
     title: "Clinical Negligence Quantum Guide",
     h1: "Clinical Negligence Quantum: Expert Evidence Guide",
     metaTitle:
-      "Clinical Negligence Quantum Expert Evidence Guide UK | Damages Expert Witness",
+      "Clinical Negligence Quantum Expert Evidence Guide | Damages Expert Witness",
     metaDescription:
       "Expert evidence guide for clinical negligence quantum: all heads of damage, George v Biggs accommodation, PPO vs lump sum, Schedule of Loss, and the quantum expert's role.",
     aboutServiceId: "future-care-costs",
@@ -301,7 +301,7 @@ const guides: GuidePage[] = [
     title: "Single Joint Expert Damages Guide",
     h1: "Single Joint Expert in Damages Cases: A Solicitor's Guide",
     metaTitle:
-      "Single Joint Expert Damages Guide UK | CPR 35.7 | Damages Expert Witness",
+      "Single Joint Expert Damages Guide | CPR 35.7 | Damages Expert Witness",
     metaDescription:
       "Solicitor's guide to Single Joint Experts in damages cases: CPR 35.7, when courts order SJEs, PI vs commercial practice, joint instructions, and written questions.",
     aboutServiceId: "loss-of-earnings",
@@ -364,3 +364,4 @@ export const guideSlugs = guides.map((g) => g.slug);
 export function getGuide(slug: string): GuidePage | undefined {
   return guides.find((g) => g.slug === slug);
 }
+

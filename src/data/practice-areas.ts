@@ -4,13 +4,13 @@ export const practiceAreas: PracticeAreaPage[] = [
   {
     slug: "personal-injury-quantum",
     title: "Personal Injury Quantum",
-    h1: "Personal Injury & Quantum Damages Expert Witness UK",
+    h1: "Personal Injury & Quantum Damages Expert Witness",
     subtitle:
-      "Loss of earnings, pension loss, Ogden Tables, and fatal accident dependency for UK PI solicitors",
+      "Loss of earnings, pension loss, Ogden Tables, and fatal accident dependency for PI solicitors",
     metaTitle:
-      "Personal Injury Damages Expert Witness UK | Loss of Earnings & Quantum",
+      "Personal Injury Damages Expert Witness | Loss of Earnings & Quantum",
     metaDescription:
-      "Damages expert witnesses for UK personal injury quantum  -  loss of earnings, pension loss, Smith v Manchester, future care, Ogden Tables, periodical payments, and FAA 1976 dependency claims.",
+      "Damages expert witnesses for personal injury quantum  -  loss of earnings, pension loss, Smith v Manchester, future care, Ogden Tables, periodical payments, and FAA 1976 dependency claims.",
     paragraphs: [
       "Personal injury quantum experts  -  typically forensic accountants with APIL First Tier accreditation, ACA or FCA qualifications, and Fellow of the Expert Witness Institute membership  -  quantify the financial losses flowing from injury. This includes past and future loss of earnings on a net basis, pension loss using Ogden Tables, future care costs capitalised with the prescribed discount rate, and other special damages presented in a Schedule of Loss compliant with CPR Part 35.",
       "Future loss of earnings is calculated using the multiplier/multiplicand method under the Ogden Tables, with adjustments for Smith v Manchester handicap awards, partial return to work, and retirement contingencies. Fatal accident claims under the Fatal Accidents Act 1976 require dependency calculations for spouses, children, and qualifying co-habitees, with multipliers applied from the date of death. Periodical payments orders may be modelled alongside lump sum awards where long-term care or earnings uncertainty warrants index-linked annual payments.",
@@ -33,13 +33,13 @@ export const practiceAreas: PracticeAreaPage[] = [
   {
     slug: "clinical-negligence",
     title: "Clinical Negligence",
-    h1: "Clinical Negligence Quantum Damages Expert Witness UK",
+    h1: "Clinical Negligence Quantum Damages Expert Witness",
     subtitle:
       "Future care, accommodation, earnings loss, and PPO modelling following George v Biggs",
     metaTitle:
-      "Clinical Negligence Damages Expert Witness UK | Quantum & Loss of Earnings",
+      "Clinical Negligence Damages Expert Witness | Quantum & Loss of Earnings",
     metaDescription:
-      "Clinical negligence quantum expert witnesses for UK solicitors  -  loss of earnings from avoidable injury, future care costs, George v Biggs accommodation, PPOs, and Court of Protection cases.",
+      "Clinical negligence quantum expert witnesses for solicitors  -  loss of earnings from avoidable injury, future care costs, George v Biggs accommodation, PPOs, and Court of Protection cases.",
     paragraphs: [
       "Clinical negligence claims often involve catastrophic injury where quantum exceeds seven figures across multiple heads of loss. A damages expert witness coordinates pecuniary quantification with care, accommodation, and life expectancy experts, preparing a comprehensive Schedule of Loss covering past and future care, case management, therapies, equipment, loss of earnings, pension loss, accommodation, and Court of Protection costs.",
       "The approach to accommodation costs has changed fundamentally following George v Biggs [2023], in which the Court of Appeal confirmed that Roberts v Johnstone no longer applies and claimants may recover the full capital cost of suitable disability-adapted housing, subject to appropriate deductions. Future care costs are assessed by care experts and capitalised by the quantum expert using Ogden multipliers, with periodical payments orders modelled where annual indexation to ASHE provides better long-term security than a lump sum.",
@@ -63,13 +63,13 @@ export const practiceAreas: PracticeAreaPage[] = [
   {
     slug: "commercial-damages",
     title: "Commercial Damages",
-    h1: "Commercial Litigation Damages Expert Witness UK",
+    h1: "Commercial Litigation Damages Expert Witness",
     subtitle:
       "Lost profits, breach of contract, IP infringement, and professional negligence quantum",
     metaTitle:
-      "Commercial Damages Expert Witness UK | Lost Profits, IP & Professional Negligence",
+      "Commercial Damages Expert Witness | Lost Profits, IP & Professional Negligence",
     metaDescription:
-      "Commercial damages expert witnesses for UK litigation  -  lost profits, breach of contract, IP infringement, professional negligence, but-for methodology, and Hadley v Baxendale remoteness analysis.",
+      "Commercial damages expert witnesses for litigation  -  lost profits, breach of contract, IP infringement, professional negligence, but-for methodology, and Hadley v Baxendale remoteness analysis.",
     paragraphs: [
       "Commercial litigation damages experts quantify financial loss arising from breach of contract, professional negligence, intellectual property infringement, shareholder disputes, and business interruption. The but-for methodology constructs a counterfactual financial model showing the claimant's projected position absent the wrong and compares it to actual outcomes, with separate analysis for expectation loss, reliance loss, and consequential loss subject to Hadley v Baxendale remoteness.",
       "Lost profits and expectation damages require robust financial records, management accounts, and market evidence to support projections. Professional negligence claims demand early attention to SAAMCo scope of duty and Allied Maples loss of chance discounting. IP cases may require parallel analysis of lost profits, reasonable royalty, and account of profits to inform remedy election. Expert determination and arbitration clauses in commercial contracts frequently appoint forensic accountants to resolve quantum without full trial.",
@@ -92,11 +92,11 @@ export const practiceAreas: PracticeAreaPage[] = [
   {
     slug: "international-arbitration",
     title: "International Arbitration",
-    h1: "International Arbitration Quantum & Damages Expert Witness UK",
+    h1: "International Arbitration Quantum & Damages Expert Witness",
     subtitle:
       "ICC, LCIA, ICSID, and UNCITRAL quantum experts for cross-border disputes",
     metaTitle:
-      "International Arbitration Damages Expert Witness UK | ICC, LCIA & ICSID Quantum",
+      "International Arbitration Damages Expert Witness | ICC, LCIA & ICSID Quantum",
     metaDescription:
       "International arbitration quantum experts for UK counsel  -  Chorzów Factory full reparation, DCF, FMV, investment treaty damages, IBA Rules on Evidence, and tribunal-appointed experts.",
     paragraphs: [
@@ -126,3 +126,4 @@ export const practiceAreaSlugs = practiceAreas.map((p) => p.slug);
 export function getPracticeArea(slug: string): PracticeAreaPage | undefined {
   return practiceAreas.find((p) => p.slug === slug);
 }
+

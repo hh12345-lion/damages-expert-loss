@@ -12,9 +12,9 @@ const PATH = "/qualifications";
 
 export const metadata = createMetadata({
   title:
-    "Damages Expert Witness Qualifications UK | ACA, CFA & Forensic Credentials",
+    "Damages Expert Witness Qualifications | ACA, CFA & Forensic Credentials",
   description:
-    "What credentials should a UK damages expert witness hold? ACA, CFA, CFE, actuarial, and APIL accreditation explained  -  plus CPR Part 35 and FPR Part 25 compliance.",
+    "What credentials should a damages expert witness hold? ACA, CFA, CFE, actuarial, and APIL accreditation explained — plus court and tribunal compliance.",
   path: PATH,
 });
 
@@ -38,7 +38,7 @@ export default function QualificationsPage() {
       />
       <PageHero
         title="Damages Expert Witness Qualifications & Credentials"
-        subtitle="What to look for when instructing forensic accountants, actuaries, and economists for UK litigation and arbitration."
+        subtitle="What to look for when instructing forensic accountants, actuaries, and economists for litigation and arbitration."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Qualifications" },
@@ -50,7 +50,7 @@ export default function QualificationsPage() {
             Instructing a damages expert witness without verifying credentials and
             CPR Part 35 compliance exposes your client to wasted costs, excluded
             evidence, and adverse costs orders. This page sets out the professional
-            qualifications, experience, and procedural standards UK solicitors should
+            qualifications, experience, and procedural standards legal teams should
             require before appointing a quantum expert.
           </p>
 

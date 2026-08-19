@@ -11,9 +11,9 @@ const PATH = "/what-is-a-damages-expert-witness";
 
 export const metadata = createMetadata({
   title:
-    "What Is a Damages Expert Witness? | UK Role, Quantum & CPR Part 35",
+    "What Is a Damages Expert Witness? | Role, Quantum & Expert Evidence",
   description:
-    "A damages expert witness quantifies financial losses for UK courts and arbitration tribunals. General damages, special damages, quantum methodology, and CPR Part 35 explained.",
+    "A damages expert witness quantifies financial losses for courts and arbitration tribunals. General damages, special damages, quantum methodology, and expert duties explained.",
   path: PATH,
 });
 
@@ -38,7 +38,7 @@ export default function WhatIsDamagesExpertWitnessPage() {
       />
       <PageHero
         title="What Is a Damages Expert Witness?"
-        subtitle="The role, duties, and methodology of UK quantum experts who quantify financial losses for courts and arbitration tribunals."
+        subtitle="The role, duties, and methodology of quantum experts who quantify financial losses for courts and arbitration tribunals."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "What Is a Damages Expert Witness?" },
@@ -69,7 +69,7 @@ export default function WhatIsDamagesExpertWitnessPage() {
             agreed, and flag where further evidence is required.
           </p>
           <p>
-            DamagesExpertWitness.co.uk connects UK solicitors and counsel with
+            DamagesExpertWitness connects legal teams worldwide with
             qualified experts across{" "}
             <Link href="/practice-areas/personal-injury-quantum">
               personal injury quantum

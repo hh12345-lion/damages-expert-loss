@@ -11,7 +11,7 @@ export const metadata = createMetadata({
   title:
     "Damages Expert Witnesses by Practice Area | PI, Commercial & Arbitration UK",
   description:
-    "Damages expert witnesses for UK personal injury, clinical negligence, commercial litigation, and international arbitration. Find the right expert for your practice area.",
+    "Damages expert witnesses for personal injury, clinical negligence, commercial litigation, and international arbitration. Find the right expert for your practice area.",
   path: "/practice-areas",
 });
 

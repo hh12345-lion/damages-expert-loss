@@ -1,6 +1,5 @@
 /**
  * POST /api/submit-lead (via netlify.toml redirect) → n8n / webhook.
- * Update BRAND_NAME per site when copying to another project.
  */
 const BRAND_NAME = "DamagesExpertWitness";
 
@@ -30,6 +29,10 @@ exports.handler = async (event) => {
     body.phone != null && body.phone !== undefined
       ? String(body.phone).trim()
       : "";
+  const organisation =
+    typeof body.organisation === "string" ? body.organisation.trim() : "";
+  const description =
+    typeof body.description === "string" ? body.description.trim() : "";
 
   if (!fullName || !email) {
     return json(400, { error: "fullName and email are required" });
@@ -39,6 +42,8 @@ exports.handler = async (event) => {
     "Full Name": fullName,
     Email: email,
     "Phone Number": phone,
+    Organisation: organisation,
+    Description: description,
     "Brand name": BRAND_NAME,
   };
 

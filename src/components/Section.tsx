@@ -4,14 +4,26 @@ interface SectionProps {
   children: ReactNode;
   alt?: boolean;
   className?: string;
+  narrow?: boolean;
 }
 
-export function Section({ children, alt = false, className = "" }: SectionProps) {
+export function Section({
+  children,
+  alt = false,
+  className = "",
+  narrow = false,
+}: SectionProps) {
   return (
     <section
-      className={`py-12 md:py-16 ${alt ? "bg-section-alt" : "bg-white"} ${className}`}
+      className={`py-14 md:py-20 ${alt ? "bg-section-warm" : "bg-section-alt"} ${className}`}
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">{children}</div>
+      <div
+        className={`mx-auto px-4 sm:px-6 lg:px-8 ${
+          narrow ? "max-w-3xl" : "max-w-7xl"
+        }`}
+      >
+        {children}
+      </div>
     </section>
   );
 }

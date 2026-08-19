@@ -11,9 +11,9 @@ const PATH = "/how-to-instruct";
 
 export const metadata = createMetadata({
   title:
-    "How to Instruct a Damages Expert Witness UK | Step-by-Step Guide",
+    "How to Instruct a Damages Expert Witness | Step-by-Step Guide",
   description:
-    "Step-by-step guide for UK solicitors on instructing the right damages expert witness  -  SJE vs party-appointed, letters of instruction, and CPR Part 35.",
+    "Step-by-step guide on instructing the right damages expert witness — SJE vs party-appointed, letters of instruction, and procedural compliance.",
   path: PATH,
 });
 
@@ -117,7 +117,7 @@ export default function HowToInstructPage() {
         ]}
       />
       <PageHero
-        title="How to Instruct a Damages Expert Witness UK"
+        title="How to Instruct a Damages Expert Witness"
         subtitle="A seven-step process for solicitors and counsel  -  from practice area identification to SJE vs party-appointed experts and arbitration hot-tubbing."
         breadcrumbs={[
           { label: "Home", href: "/" },

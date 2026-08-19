@@ -17,9 +17,9 @@ export const caseTypes: ContentPage[] = [
   {
     slug: "loss-of-earnings-personal-injury",
     title: "Loss of Earnings (Personal Injury)",
-    h1: "Loss of Earnings Personal Injury Damages Expert Witness UK",
+    h1: "Loss of Earnings Personal Injury Damages Expert Witness",
     metaTitle:
-      "Loss of Earnings Expert Witness UK | Personal Injury Quantum",
+      "Loss of Earnings Expert Witness | Personal Injury Quantum",
     metaDescription:
       "UK damages expert witnesses for past and future loss of earnings in personal injury claims  -  net earnings, Ogden Tables, Smith v Manchester, and self-employed quantum for solicitors.",
     paragraphs: [
@@ -46,11 +46,11 @@ export const caseTypes: ContentPage[] = [
   {
     slug: "pension-loss-calculation",
     title: "Pension Loss Calculation",
-    h1: "Pension Loss Damages Expert Witness UK | Ogden Tables & Actuarial Evidence",
+    h1: "Pension Loss Damages Expert Witness | Ogden Tables & Actuarial Evidence",
     metaTitle:
-      "Pension Loss Expert Witness UK | Ogden Tables & Actuarial Evidence",
+      "Pension Loss Expert Witness | Ogden Tables & Actuarial Evidence",
     metaDescription:
-      "Damages expert witnesses for pension loss in UK personal injury and fatal accident claims  -  defined benefit and contribution schemes, Ogden Tables 35–38, CETV analysis, and actuarial liaison.",
+      "Damages expert witnesses for pension loss in personal injury and fatal accident claims  -  defined benefit and contribution schemes, Ogden Tables 35–38, CETV analysis, and actuarial liaison.",
     paragraphs: [
       "Pension loss arises where injury prevents the claimant from working to normal retirement age, reducing pension accrual in defined benefit or defined contribution schemes. A quantum expert quantifies the annual pension the claimant would have received but for the injury, then capitalises that loss using Ogden Tables 35–38 (loss of pension rights) and the prescribed discount rate. State pension loss may also be recoverable where the claimant's National Insurance record is affected.",
       "Defined benefit schemes  -  particularly final salary arrangements  -  may require cash equivalent transfer value (CETV) analysis and liaison with a pensions actuary where scheme rules, early retirement factors, or GMP equalisation complicate the calculation. For defined contribution schemes, the loss is typically measured by employer contributions and member contributions that will not be made during the lost working period, plus any investment growth foregone. Expert reports set out scheme membership history, normal retirement age, and assumptions on salary progression.",
@@ -75,9 +75,9 @@ export const caseTypes: ContentPage[] = [
   {
     slug: "fatal-accident-dependency",
     title: "Fatal Accident Dependency",
-    h1: "Fatal Accident Dependency Damages Expert Witness UK | FAA 1976",
+    h1: "Fatal Accident Dependency Damages Expert Witness | FAA 1976",
     metaTitle:
-      "Fatal Accident Dependency Expert Witness UK | FAA 1976",
+      "Fatal Accident Dependency Expert Witness | FAA 1976",
     metaDescription:
       "UK quantum experts for Fatal Accidents Act 1976 dependency claims  -  financial and services dependency, bereavement award, Ogden multipliers from date of death, and co-habitee claims.",
     paragraphs: [
@@ -104,9 +104,9 @@ export const caseTypes: ContentPage[] = [
   {
     slug: "future-care-costs",
     title: "Future Care Costs",
-    h1: "Future Care Costs Damages Expert Witness UK",
+    h1: "Future Care Costs Damages Expert Witness",
     metaTitle:
-      "Future Care Costs Expert Witness UK | Clinical & Catastrophic Injury",
+      "Future Care Costs Expert Witness | Clinical & Catastrophic Injury",
     metaDescription:
       "Damages experts capitalising future care, case management, and accommodation costs  -  George v Biggs accommodation, Ogden multipliers, PPO modelling, and Court of Protection deputy costs.",
     paragraphs: [
@@ -133,11 +133,11 @@ export const caseTypes: ContentPage[] = [
   {
     slug: "clinical-negligence-quantum",
     title: "Clinical Negligence Quantum",
-    h1: "Clinical Negligence Quantum Damages Expert Witness UK",
+    h1: "Clinical Negligence Quantum Damages Expert Witness",
     metaTitle:
-      "Clinical Negligence Quantum Expert Witness UK | Schedule of Loss",
+      "Clinical Negligence Quantum Expert Witness | Schedule of Loss",
     metaDescription:
-      "Forensic accountants for clinical negligence quantum  -  PSLA context, past and future care, earnings loss, accommodation, PPO modelling, and CRU deductions in UK medico-legal claims.",
+      "Forensic accountants for clinical negligence quantum  -  PSLA context, past and future care, earnings loss, accommodation, PPO modelling, and CRU deductions in medico-legal claims.",
     paragraphs: [
       "Clinical negligence claims combine general damages for pain, suffering, and loss of amenity (PSLA)  -  assessed by the court against Judicial College Guidelines  -  with extensive special damages requiring expert quantification. A damages expert witness prepares the pecuniary Schedule of Loss covering past and future loss of earnings, care and case management, accommodation, therapies, equipment, transport, and Court of Protection costs. The expert coordinates with care, accommodation, and life expectancy experts to ensure consistent assumptions across all heads.",
       "Past special damages are supported by invoices, receipts, and records to trial; future losses are capitalised using Ogden Tables and the discount rate. Following George v Biggs [2023], accommodation is quantified on a full capital cost basis rather than under Roberts v Johnstone. Periodical payments orders may be appropriate for future care and earnings where the claimant's longevity and care needs create significant uncertainty  -  the quantum expert models lump sum and PPO alternatives for the court's comparison.",
@@ -161,9 +161,9 @@ export const caseTypes: ContentPage[] = [
   {
     slug: "commercial-contract-damages",
     title: "Commercial Contract Damages",
-    h1: "Commercial Contract Breach Damages Expert Witness UK",
+    h1: "Commercial Contract Breach Damages Expert Witness",
     metaTitle:
-      "Commercial Contract Damages Expert Witness UK | Lost Profits & But-For",
+      "Commercial Contract Damages Expert Witness | Lost Profits & But-For",
     metaDescription:
       "UK damages experts for breach of contract claims  -  but-for lost profits, expectation vs reliance damages, Hadley v Baxendale remoteness, and mitigation analysis for commercial litigation.",
     paragraphs: [
@@ -197,11 +197,11 @@ export const caseTypes: ContentPage[] = [
   {
     slug: "ip-infringement-damages",
     title: "IP Infringement Damages",
-    h1: "IP Infringement Damages Expert Witness UK",
+    h1: "IP Infringement Damages Expert Witness",
     metaTitle:
-      "IP Infringement Damages Expert Witness UK | Lost Profits & Royalty",
+      "IP Infringement Damages Expert Witness | Lost Profits & Royalty",
     metaDescription:
-      "Expert witnesses for patent, trade mark, and copyright damages  -  lost profits, reasonable royalty, account of profits, remedy election, and CDPA additional damages for UK solicitors.",
+      "Expert witnesses for patent, trade mark, and copyright damages  -  lost profits, reasonable royalty, account of profits, remedy election, and CDPA additional damages for solicitors.",
     paragraphs: [
       "Intellectual property infringement claims require precise quantification of compensatory damages and, where elected, an account of profits. A damages expert witness quantifies lost profits by analysing sales and margin diverted to the infringer or lost by the rights holder, addressing demand constraints, non-infringing alternatives, and apportionment of overhead. Reasonable royalty damages value the use of the IP through comparable licence transactions and hypothetical negotiation at the date infringement began.",
       "The claimant must elect between compensatory damages and an account of profits  -  remedies that measure different things and may produce materially different outcomes. The expert calculates both so the legal team can make an informed strategic election. Additional damages under section 97(2) Copyright, Designs and Patents Act 1988 may be available where infringement was flagrant, requiring separate analysis of aggravating factors alongside financial quantum.",
@@ -225,9 +225,9 @@ export const caseTypes: ContentPage[] = [
   {
     slug: "professional-negligence-damages",
     title: "Professional Negligence Damages",
-    h1: "Professional Negligence Damages Expert Witness UK",
+    h1: "Professional Negligence Damages Expert Witness",
     metaTitle:
-      "Professional Negligence Damages Expert Witness UK | SAAMCo & Loss of Chance",
+      "Professional Negligence Damages Expert Witness | SAAMCo & Loss of Chance",
     metaDescription:
       "Damages experts for solicitor, accountant, and financial adviser negligence  -  but-for counterfactuals, SAAMCo scope of duty, Allied Maples loss of chance, and causation attribution.",
     paragraphs: [
@@ -242,9 +242,9 @@ export const caseTypes: ContentPage[] = [
   {
     slug: "employment-discrimination-loss",
     title: "Employment & Discrimination Loss",
-    h1: "Employment & Discrimination Damages Expert Witness UK",
+    h1: "Employment & Discrimination Damages Expert Witness",
     metaTitle:
-      "Employment Tribunal Damages Expert Witness UK | Loss of Earnings & Vento",
+      "Employment Tribunal Damages Expert Witness | Loss of Earnings & Vento",
     metaDescription:
       "Quantum experts for Employment Tribunal claims  -  unfair dismissal loss of earnings, future loss, pension loss, whistleblowing, and financial heads in discrimination cases.",
     paragraphs: [
@@ -271,9 +271,9 @@ export const caseTypes: ContentPage[] = [
   {
     slug: "investment-treaty-damages",
     title: "Investment Treaty Damages",
-    h1: "Investment Treaty Arbitration Damages Expert Witness UK",
+    h1: "Investment Treaty Arbitration Damages Expert Witness",
     metaTitle:
-      "Investment Treaty Damages Expert Witness UK | ICSID & Chorzów Factory",
+      "Investment Treaty Damages Expert Witness | ICSID & Chorzów Factory",
     metaDescription:
       "Quantum economists and forensic accountants for ICSID and UNCITRAL investment treaty claims  -  Chorzów Factory full reparation, FMV, DCF, and fair and equitable treatment breach damages.",
     paragraphs: [
@@ -300,9 +300,9 @@ export const caseTypes: ContentPage[] = [
   {
     slug: "shareholder-dispute-damages",
     title: "Shareholder Dispute Damages",
-    h1: "Shareholder Dispute Damages Expert Witness UK",
+    h1: "Shareholder Dispute Damages Expert Witness",
     metaTitle:
-      "Shareholder Dispute Damages Expert Witness UK | S994 Unfair Prejudice",
+      "Shareholder Dispute Damages Expert Witness | S994 Unfair Prejudice",
     metaDescription:
       "Damages and valuation experts for S994 unfair prejudice petitions  -  fair value buy-outs, quasi-partnership principles, minority discount disapplication, and diversion of value claims.",
     paragraphs: [
@@ -329,11 +329,11 @@ export const caseTypes: ContentPage[] = [
   {
     slug: "tax-dispute-quantum",
     title: "Tax Dispute Quantum",
-    h1: "Tax Dispute Quantum Expert Witness UK",
+    h1: "Tax Dispute Quantum Expert Witness",
     metaTitle:
-      "Tax Dispute Quantum Expert Witness UK | First-tier Tribunal Evidence",
+      "Tax Dispute Quantum Expert Witness | First-tier Tribunal Evidence",
     metaDescription:
-      "Independent valuation and quantum experts for UK tax tribunal appeals  -  HMRC disputes, IHT business property relief, CGT share valuations, and balance of probabilities expert evidence.",
+      "Independent valuation and quantum experts for tax tribunal appeals  -  HMRC disputes, IHT business property relief, CGT share valuations, and balance of probabilities expert evidence.",
     paragraphs: [
       "Tax disputes before the First-tier Tribunal (Tax Chamber) frequently turn on valuation of shares, business assets, or the quantum of income, gains, or allowances. A quantum expert provides independent analysis challenging HMRC's assessment  -  covering unquoted share valuations for capital gains tax, inheritance tax business property relief, employment-related securities, and penalty calculations based on the correct tax figure.",
       "Expert evidence must satisfy the civil standard of proof on the balance of probabilities, demonstrating that the expert's methodology is more probably correct than HMRC's position. Reports address valuation date, minority and marketability discounts where applicable, maintainable earnings bases, and comparable transactions. Experts may also quantify losses or allowances flowing from disputed transactions where the quantum of tax depends on underlying commercial figures.",
@@ -362,3 +362,4 @@ export const caseTypeSlugs = caseTypes.map((c) => c.slug);
 export function getCaseType(slug: string): ContentPage | undefined {
   return caseTypes.find((c) => c.slug === slug);
 }
+

@@ -30,21 +30,19 @@ export default function HomePage() {
     <>
       <JsonLd data={graph} />
       <PageHero
-        title="Damages Expert Witness UK"
-        subtitle="UK-only expert witness matching for solicitors and counsel. Connect with qualified forensic accountants, actuaries, and quantum specialists for personal injury, commercial litigation, clinical negligence, and UK-seated arbitration."
+        title="Damages Expert Witness"
+        subtitle="Global expert witness matching for legal teams. Connect with qualified forensic accountants, actuaries, and quantum specialists for personal injury, commercial litigation, clinical negligence, and international arbitration."
       />
       <Section>
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-lg leading-relaxed text-body">
-            DamagesExpertWitness.co.uk is a United Kingdom service for UK solicitors,
-            barristers, and arbitration counsel instructing quantum experts under English,
-            Welsh, Scottish, and Northern Irish law. We match you with the right expert
-            for every head of loss  -  from Ogden Table earnings calculations to
-            but-for commercial models and ICSID investment treaty damages in UK-seated
-            proceedings.
+            DamagesExpertWitness connects solicitors, counsel, and in-house
+            legal teams worldwide with quantum experts for every head of loss —
+            from earnings and pension calculations to but-for commercial models
+            and investment treaty damages in cross-border proceedings.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {practiceAreas.map((area) => (
             <Card
               key={area.slug}
@@ -57,12 +55,12 @@ export default function HomePage() {
       </Section>
 
       <Section alt>
-        <h2 className="text-center text-2xl font-bold text-heading sm:text-3xl">
+        <h2 className="text-center font-display text-2xl font-bold text-heading sm:text-3xl">
           Damages Expert Witness Services
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-body">
-          CPR Part 35 compliant quantum evidence across all major heads of
-          financial loss.
+          Quantum evidence across all major heads of financial loss, in court
+          and arbitration.
         </p>
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.slice(0, 8).map((service) => (
@@ -77,7 +75,7 @@ export default function HomePage() {
         <div className="mt-8 text-center">
           <Link
             href="/services"
-            className="inline-flex min-h-[44px] items-center font-semibold text-primary hover:underline"
+            className="inline-flex min-h-[44px] items-center font-semibold text-primary hover:text-accent"
           >
             View all services →
           </Link>
@@ -85,10 +83,10 @@ export default function HomePage() {
       </Section>
 
       <Section>
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           <div>
-            <h2 className="text-2xl font-bold text-heading">
-              Why Instruct Through Us?
+            <h2 className="font-display text-2xl font-bold text-heading">
+              Why instruct through us?
             </h2>
             <ul className="mt-6 space-y-4 text-body">
               <li className="flex gap-3">
@@ -99,31 +97,33 @@ export default function HomePage() {
               </li>
               <li className="flex gap-3">
                 <span className="font-bold text-accent">✓</span>
-                <span>Personal injury, commercial, and arbitration specialists</span>
+                <span>
+                  Personal injury, commercial, and arbitration specialists
+                </span>
               </li>
               <li className="flex gap-3">
                 <span className="font-bold text-accent">✓</span>
-                <span>CPR Part 35 and FPR Part 25 compliant reports</span>
+                <span>Court and tribunal compliant expert reports</span>
               </li>
               <li className="flex gap-3">
                 <span className="font-bold text-accent">✓</span>
-                <span>Response within 1 business day</span>
+                <span>Response within one business day</span>
               </li>
             </ul>
           </div>
-          <div className="rounded border border-border bg-section-alt p-6">
-            <h3 className="text-lg font-semibold text-heading">
-              Master Resource: Types of Damages
+          <div className="border border-border bg-white p-6 shadow-card">
+            <h3 className="font-display text-lg font-semibold text-heading">
+              Master resource: types of damages
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-body">
               Our comprehensive guide to general damages, special damages,
               pecuniary and non-pecuniary loss, compensatory principles, and
-              discount rate methodology  -  the definitive reference for UK
-              litigation solicitors.
+              discount rate methodology — the definitive reference for
+              litigation teams instructing quantum experts.
             </p>
             <Link
               href="/types-of-damages"
-              className="mt-4 inline-flex min-h-[44px] items-center font-semibold text-primary hover:underline"
+              className="mt-4 inline-flex min-h-[44px] items-center font-semibold text-primary hover:text-accent"
             >
               Read the complete guide →
             </Link>

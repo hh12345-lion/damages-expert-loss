@@ -37,7 +37,7 @@ export default function NotFound() {
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
             The page you are looking for does not exist, has been moved, or the
             URL may be incorrect. Use the links below to find damages expert
-            witness services and resources for UK litigation and arbitration.
+            witness services and resources for litigation and arbitration.
           </p>
         </div>
       </section>

@@ -44,7 +44,7 @@ export default function TermsPage() {
           <h2>About This Website</h2>
           <p>
             {SITE_NAME} ({SITE_URL}) is an expert witness referral service. We connect
-            UK solicitors, barristers, law firms, and international arbitration counsel
+            solicitors, barristers, law firms, and international arbitration counsel
             with qualified damages expert witnesses  -  including forensic accountants,
             actuaries, and economists  -  for litigation and arbitration matters.
           </p>

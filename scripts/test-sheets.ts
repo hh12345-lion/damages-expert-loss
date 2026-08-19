@@ -53,13 +53,6 @@ async function test() {
       email: "test@example.com",
       phone: "+44 7700 900000",
       organisation: "Test Firm LLP",
-      practiceArea: "Personal Injury",
-      damagesType: "Loss of Earnings",
-      court: "High Court",
-      expertType: "Party-appointed",
-      claimValue: "£250k–£1M",
-      deadline: "2026-06-01",
-      urgency: "Planning ahead",
       description: "Test row from scripts/test-sheets.ts",
     });
     const result = await appendRow(row);

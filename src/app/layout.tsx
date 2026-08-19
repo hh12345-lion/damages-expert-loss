@@ -1,22 +1,28 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Literata, Plus_Jakarta_Sans } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieConsentRoot } from "@/components/cookies/CookieConsentRoot";
 import { createMetadata } from "@/lib/metadata";
 import "./globals.css";
 
-const inter = Inter({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-plus-jakarta",
+  display: "swap",
+});
+
+const literata = Literata({
+  subsets: ["latin"],
+  variable: "--font-literata",
   display: "swap",
 });
 
 export const metadata: Metadata = createMetadata({
   title:
-    "Damages Expert Witness UK | Quantum, Loss of Earnings & Commercial Damages",
+    "Damages Expert Witness | Quantum, Loss of Earnings & Commercial Damages",
   description:
-    "UK-only damages expert witness referral for solicitors and counsel. Forensic accountants and quantum experts for personal injury, commercial disputes, clinical negligence, and UK-seated arbitration. CPR Part 35 compliant.",
+    "Global damages expert witness referral for legal teams. Forensic accountants and quantum specialists for personal injury, commercial disputes, clinical negligence, and international arbitration.",
   path: "/",
 });
 
@@ -26,7 +32,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-GB" className={`${inter.variable} h-full`}>
+    <html
+      lang="en"
+      className={`${plusJakarta.variable} ${literata.variable} h-full`}
+    >
       <body className="flex min-h-full flex-col antialiased">
         <CookieConsentRoot>
           <Header />

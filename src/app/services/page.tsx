@@ -13,9 +13,9 @@ import { services } from "@/data/services";
 import { caseTypes } from "@/data/case-types";
 
 export const metadata = createMetadata({
-  title: "Damages Expert Witness Services UK | Full Service List",
+  title: "Damages Expert Witness Services | Full Service List",
   description:
-    "UK damages expert witness services: loss of earnings, pension loss, lost profits, quantum of damages, personal injury, commercial litigation, and international arbitration.",
+    "Damages expert witness services: loss of earnings, pension loss, lost profits, quantum of damages, personal injury, commercial litigation, and international arbitration.",
   path: "/services",
 });
 
@@ -42,7 +42,7 @@ export default function ServicesPage() {
         ]}
       />
       <PageHero
-        title="Damages Expert Witness Services UK"
+        title="Damages Expert Witness Services"
         subtitle="Eight core quantum services  -  from loss of earnings and pension loss to commercial lost profits, IP infringement, and international arbitration."
         breadcrumbs={[
           { label: "Home", href: "/" },

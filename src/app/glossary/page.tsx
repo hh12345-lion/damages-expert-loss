@@ -8,9 +8,9 @@ import { breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 import { glossaryTerms } from "@/data/glossary";
 
 export const metadata = createMetadata({
-  title: "Damages Expert Witness Glossary | Key UK Legal & Finance Terms",
+  title: "Damages Expert Witness Glossary | Key Legal & Finance Terms",
   description:
-    "Definitions of key damages and expert witness terms for UK litigation  -  from general damages to quantum, Ogden Tables, multiplier/multiplicand, and CPR Part 35.",
+    "Definitions of key damages and expert witness terms — from general damages to quantum, Ogden Tables, multiplier/multiplicand, and expert evidence rules.",
   path: "/glossary",
 });
 
@@ -33,7 +33,7 @@ export default function GlossaryPage() {
       />
       <PageHero
         title="Damages Expert Witness Glossary"
-        subtitle="Key UK legal and financial terms for damages quantification and expert witness evidence."
+        subtitle="Key legal and financial terms for damages quantification and expert witness evidence."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Glossary" },

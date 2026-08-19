@@ -8,9 +8,9 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { caseTypes } from "@/data/case-types";
 
 export const metadata = createMetadata({
-  title: "Case Types Requiring a Damages Expert Witness | UK Guide",
+  title: "Case Types Requiring a Damages Expert Witness",
   description:
-    "Which UK legal cases need a damages expert witness? Personal injury, clinical negligence, loss of earnings, commercial disputes, and international arbitration explained.",
+    "Which legal cases need a damages expert witness? Personal injury, clinical negligence, loss of earnings, commercial disputes, and international arbitration explained.",
   path: "/case-types",
 });
 
