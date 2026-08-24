@@ -38,8 +38,7 @@ export const navTypesOfDamagesLinks = [
   },
   {
     href: "/types-of-damages#personal-injury-heads",
-    label: "Personal Injury Heads",
-  },
+    label: "Personal Injury Heads" },
   {
     href: "/types-of-damages#commercial-heads",
     label: "Commercial Damages Heads",
@@ -121,4 +120,56 @@ export const footerColumns = [
       { href: "/contact", label: "Contact Us" },
     ],
   },
+];
+
+/** Flat header links — editorial slash-nav, no dropdowns */
+export const headerNavLinks = [
+  { href: "/services", label: "Services" },
+  { href: "/practice-areas", label: "Practice Areas" },
+  { href: "/case-types", label: "Case Types" },
+  { href: "/types-of-damages", label: "Damages Guide" },
+  { href: "/guides", label: "Guides" },
+];
+
+/** Grouped links for the full-width topics panel */
+export const headerTopicGroups = [
+  {
+    title: "Services & areas",
+    links: [
+      { href: "/services", label: "All services" },
+      { href: "/practice-areas", label: "Practice areas" },
+      { href: "/case-types", label: "Case types" },
+      { href: "/types-of-damages", label: "Types of damages" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { href: "/guides", label: "Solicitor guides" },
+      { href: "/how-to-instruct", label: "How to instruct" },
+      { href: "/qualifications", label: "Qualifications" },
+      { href: "/glossary", label: "Glossary" },
+      { href: "/what-is-a-damages-expert-witness", label: "What is a damages expert?" },
+    ],
+  },
+  {
+    title: "Instruct",
+    links: [
+      { href: "/contact", label: "Submit an enquiry" },
+      { href: "/how-to-instruct", label: "Instruction process" },
+    ],
+  },
+];
+
+/** Single-row footer ribbon — not column grids */
+export const footerRibbonLinks = [
+  { href: "/services", label: "Services" },
+  { href: "/practice-areas", label: "Practice Areas" },
+  { href: "/case-types", label: "Case Types" },
+  { href: "/types-of-damages", label: "Damages Guide" },
+  { href: "/guides", label: "Guides" },
+  { href: "/glossary", label: "Glossary" },
+  { href: "/qualifications", label: "Qualifications" },
+  { href: "/how-to-instruct", label: "How to Instruct" },
+  { href: "/contact", label: "Contact" },
 ];
