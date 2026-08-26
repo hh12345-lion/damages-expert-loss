@@ -1,8 +1,8 @@
 import { appendRow, type CellValue } from "@/lib/google-sheets";
 
-export const BRAND_NAME = "DamagesExpertWitness";
+export const BRAND_NAME = "Damages Expert Witness";
 
-/** Row 1 headers in Google Sheets — must match column order in buildLeadSheetRow */
+/** Reserved for instruct form (`/api/instruct`) — not used by contact webhook */
 export const LEAD_SHEET_HEADERS = [
   "Timestamp",
   "Full Name",

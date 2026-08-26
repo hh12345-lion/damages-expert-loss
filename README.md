@@ -6,7 +6,7 @@ Lead-generation website for legal teams seeking damages expert witnesses (quantu
 
 - Next.js 16 (App Router), TypeScript, Tailwind CSS v4
 - Netlify deployment with `@netlify/plugin-nextjs`
-- Contact form → Google Sheets and/or n8n webhook via `/api/submit-lead`
+- Contact form → n8n webhook via `/api/submit-lead` (see `Lead_notification_setup.md`)
 
 ## Setup
 
@@ -19,19 +19,15 @@ npm run dev
 
 | Variable | Purpose |
 |----------|---------|
-| `GOOGLE_SERVICE_ACCOUNT_EMAIL` | Google service account email (Sheets API) |
-| `GOOGLE_PRIVATE_KEY` | Service account private key (keep `\n` escapes in quotes) |
-| `GOOGLE_SHEET_ID` | Spreadsheet ID from the Google Sheets URL |
-| `GOOGLE_SHEET_TAB_NAME` | Tab name (e.g. `Sheet10`) |
-| `Lead_notification_url` | Optional n8n/webhook URL (JSON payload on submit) |
-| `NEXT_PUBLIC_SITE_URL` | Canonical URL (default: `https://www.damagesexpertwitness.co.uk`) |
+| `Lead_notification_url` | n8n webhook URL (POST). `LEAD_NOTIFICATION_URL` accepted as fallback |
+| `NEXT_PUBLIC_SITE_URL` | Canonical site URL; derives `domain` in webhook payload |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Optional Google Analytics 4 |
 | `GOOGLE_SITE_VERIFICATION` | Search Console meta tag |
 | `BING_SITE_VERIFICATION` | Bing Webmaster meta tag |
 
-Contact form rows use headers in `src/lib/lead-submission.ts` (`LEAD_SHEET_HEADERS`). Add row 1 in your sheet tab with those column names.
+Contact form POSTs `fullName`, `email`, `phone`, and `formType: "contact"` to `/api/submit-lead`. The webhook receives: `Full Name`, `Email`, `Phone Number`, `Brand name`, `domain`.
 
-Test Sheets: `npm run test:sheets`
+See [Lead_notification_setup.md](Lead_notification_setup.md) for full wiring details.
 
 ## Build & deploy
 

@@ -1,7 +1,21 @@
 /**
- * POST /api/submit-lead (via netlify.toml redirect) → n8n / webhook.
+ * POST /api/submit-lead (via netlify.toml redirect) → n8n webhook.
+ * @see Lead_notification_setup.md
  */
-const BRAND_NAME = "DamagesExpertWitness";
+const BRAND_NAME = "Damages Expert Witness";
+
+function getSiteDomain() {
+  const url =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    "https://www.damagesexpertwitness.co.uk";
+
+  try {
+    const hostname = new URL(url.replace(/\/$/, "")).hostname;
+    return hostname.replace(/^www\./i, "");
+  } catch {
+    return "damagesexpertwitness.co.uk";
+  }
+}
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
@@ -13,7 +27,7 @@ exports.handler = async (event) => {
 
   if (!webhookUrl) {
     console.error("Lead_notification_url is not configured");
-    return json(500, { error: "Lead notification is not configured" });
+    return json(503, { error: "Lead notification is not configured" });
   }
 
   let body;
@@ -29,10 +43,6 @@ exports.handler = async (event) => {
     body.phone != null && body.phone !== undefined
       ? String(body.phone).trim()
       : "";
-  const organisation =
-    typeof body.organisation === "string" ? body.organisation.trim() : "";
-  const description =
-    typeof body.description === "string" ? body.description.trim() : "";
 
   if (!fullName || !email) {
     return json(400, { error: "fullName and email are required" });
@@ -42,9 +52,8 @@ exports.handler = async (event) => {
     "Full Name": fullName,
     Email: email,
     "Phone Number": phone,
-    Organisation: organisation,
-    Description: description,
     "Brand name": BRAND_NAME,
+    domain: getSiteDomain(),
   };
 
   try {
@@ -72,4 +81,4 @@ function json(statusCode, data) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
   };
-}
+};

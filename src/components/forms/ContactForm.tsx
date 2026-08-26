@@ -5,8 +5,8 @@ import { useRouter } from "next/navigation";
 import { SITE_EMAIL } from "@/lib/site";
 
 /**
- * POST lead payload to /api/submit-lead → Google Sheets (+ optional n8n webhook).
- * Configure Netlify env vars: GOOGLE_* and/or Lead_notification_url.
+ * POST /api/submit-lead → Lead_notification_url (n8n webhook).
+ * @see Lead_notification_setup.md
  */
 export function ContactForm() {
   const router = useRouter();
@@ -23,8 +23,7 @@ export function ContactForm() {
       fullName: String(data.get("name") ?? "").trim(),
       email: String(data.get("email") ?? "").trim(),
       phone: String(data.get("phone") ?? "").trim(),
-      organisation: String(data.get("organisation") ?? "").trim(),
-      description: String(data.get("description") ?? "").trim(),
+      formType: "contact" as const,
     };
 
     if (!leadPayload.fullName || !leadPayload.email) {
@@ -50,7 +49,7 @@ export function ContactForm() {
       setErrorMessage(
         res.status === 503
           ? (body?.message ??
-              "Lead delivery is not configured. Set Google Sheets or Lead_notification_url in Netlify.")
+              "Lead delivery is not configured. Set Lead_notification_url in Netlify.")
           : "Something went wrong. Please try again or email us directly."
       );
     } catch {
@@ -65,72 +64,44 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="min-w-0 space-y-5">
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-        <div className="min-w-0">
-          <label htmlFor="name" className={labelClass}>
-            Name *
-          </label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            required
-            autoComplete="name"
-            className={inputClass}
-          />
-        </div>
-        <div className="min-w-0">
-          <label htmlFor="email" className={labelClass}>
-            Email *
-          </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-            autoComplete="email"
-            className={inputClass}
-          />
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-        <div className="min-w-0">
-          <label htmlFor="organisation" className={labelClass}>
-            Organisation
-          </label>
-          <input
-            id="organisation"
-            name="organisation"
-            type="text"
-            autoComplete="organization"
-            className={inputClass}
-          />
-        </div>
-        <div className="min-w-0">
-          <label htmlFor="phone" className={labelClass}>
-            Phone
-          </label>
-          <input
-            id="phone"
-            name="phone"
-            type="tel"
-            autoComplete="tel"
-            className={inputClass}
-          />
-        </div>
+      <div className="min-w-0">
+        <label htmlFor="name" className={labelClass}>
+          Full name *
+        </label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          autoComplete="name"
+          className={inputClass}
+        />
       </div>
 
       <div className="min-w-0">
-        <label htmlFor="description" className={labelClass}>
-          Brief description
+        <label htmlFor="email" className={labelClass}>
+          Email *
         </label>
-        <textarea
-          id="description"
-          name="description"
-          rows={4}
-          placeholder="Practice area, forum, and what expert support you need"
-          className={`${inputClass} min-h-[100px] resize-y`}
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          autoComplete="email"
+          className={inputClass}
+        />
+      </div>
+
+      <div className="min-w-0">
+        <label htmlFor="phone" className={labelClass}>
+          Phone
+        </label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          autoComplete="tel"
+          className={inputClass}
         />
       </div>
 
