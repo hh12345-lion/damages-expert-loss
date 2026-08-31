@@ -52,6 +52,7 @@ async function test() {
       fullName: "Test Entry",
       email: "test@example.com",
       phone: "+44 7700 900000",
+      formType: "contact",
       organisation: "Test Firm LLP",
       description: "Test row from scripts/test-sheets.ts",
     });

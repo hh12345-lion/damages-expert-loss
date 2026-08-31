@@ -32,7 +32,7 @@ export function parseLeadNotificationBody(
     formType:
       b.formType === "instruct" || b.formType === "contact"
         ? b.formType
-        : undefined,
+        : "contact",
   };
 }
 

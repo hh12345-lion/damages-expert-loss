@@ -21,6 +21,9 @@ npm run dev
 |----------|---------|
 | `Lead_notification_url` | n8n webhook URL (POST). `LEAD_NOTIFICATION_URL` accepted as fallback |
 | `NEXT_PUBLIC_SITE_URL` | Canonical site URL; derives `domain` in webhook payload |
+| `GOOGLE_SHEET_ID` | Optional Sheets backup (one shared tab + Form Type) |
+| `GOOGLE_SHEET_TAB_NAME` | Shared tab name (default `Sheet1`) |
+| `GOOGLE_SERVICE_ACCOUNT_EMAIL` / `GOOGLE_PRIVATE_KEY` | Sheets service account |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Optional Google Analytics 4 |
 | `GOOGLE_SITE_VERIFICATION` | Search Console meta tag |
 | `BING_SITE_VERIFICATION` | Bing Webmaster meta tag |

@@ -1,22 +1,26 @@
 import { appendRow, type CellValue } from "@/lib/google-sheets";
+import {
+  BRAND_NAME,
+  type LeadNotificationInput,
+} from "@/lib/leadNotification";
+import { getSiteDomain } from "@/lib/seo";
 
-export const BRAND_NAME = "Damages Expert Witness";
+export { BRAND_NAME };
 
-/** Reserved for instruct form (`/api/instruct`) — not used by contact webhook */
+/** Row 1 headers on one shared GOOGLE_SHEET_TAB_NAME (Form Type distinguishes rows) */
 export const LEAD_SHEET_HEADERS = [
   "Timestamp",
+  "Brand Name",
+  "Form Type",
   "Full Name",
   "Email",
   "Phone Number",
   "Organisation",
   "Case Description",
-  "Brand Name",
+  "Domain",
 ] as const;
 
-export interface LeadSubmission {
-  fullName: string;
-  email: string;
-  phone: string;
+export interface LeadSubmission extends LeadNotificationInput {
   organisation?: string;
   description?: string;
 }
@@ -28,6 +32,10 @@ function sanitize(str: string): string {
 function opt(value: unknown): string {
   if (value == null) return "";
   return sanitize(String(value));
+}
+
+function formTypeLabel(formType?: string): string {
+  return formType === "instruct" ? "Instruct" : "Contact";
 }
 
 function formatPhoneForSheet(phone: string): string {
@@ -47,55 +55,38 @@ export function parseLeadBody(body: unknown): LeadSubmission | null {
 
   if (!fullName || !email) return null;
 
+  const formType =
+    b.formType === "instruct" || b.formType === "contact"
+      ? b.formType
+      : "contact";
+
   return {
     fullName,
     email,
     phone: b.phone != null ? String(b.phone).trim() : "",
+    formType,
     organisation: opt(b.organisation),
-    description: opt(b.description),
+    description: opt(b.description ?? b.message),
   };
 }
 
-export function buildLeadSheetRow(lead: LeadSubmission): CellValue[] {
+export function buildLeadSheetRow(
+  lead: LeadSubmission,
+  domain = getSiteDomain()
+): CellValue[] {
   return [
     new Date().toISOString(),
+    BRAND_NAME,
+    formTypeLabel(lead.formType),
     lead.fullName,
     lead.email,
-    formatPhoneForSheet(lead.phone),
+    formatPhoneForSheet(lead.phone ?? ""),
     lead.organisation ?? "",
     lead.description ?? "",
-    BRAND_NAME,
+    domain,
   ];
-}
-
-export function buildWebhookPayload(lead: LeadSubmission) {
-  return {
-    "Full Name": lead.fullName,
-    Email: lead.email,
-    "Phone Number": lead.phone,
-    Organisation: lead.organisation ?? "",
-    Description: lead.description ?? "",
-    "Brand name": BRAND_NAME,
-  };
 }
 
 export async function appendLeadToSheet(lead: LeadSubmission): Promise<void> {
   await appendRow(buildLeadSheetRow(lead));
-}
-
-export async function notifyLeadWebhook(
-  lead: LeadSubmission,
-  webhookUrl: string
-): Promise<boolean> {
-  try {
-    const res = await fetch(webhookUrl, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(buildWebhookPayload(lead)),
-    });
-    return res.ok;
-  } catch (err) {
-    console.error("Lead webhook failed:", err);
-    return false;
-  }
 }
