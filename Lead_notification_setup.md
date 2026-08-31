@@ -127,4 +127,4 @@ fetch("/api/submit-lead", {
 | **`BRAND_NAME`** | `Damages Expert Witness` |
 | **`domain`** (when `NEXT_PUBLIC_SITE_URL` is set) | `damagesexpertwitness.co.uk` |
 | Contact webhook | Primary via **`/api/submit-lead`** on form submit |
-| Google Sheets | One shared tab (`GOOGLE_SHEET_TAB_NAME`) + **Form Type**; soft-fail after webhook |
+| Google Sheets / email | Soft-fail via **`/api/contact`** — one shared tab + **Form Type** |
