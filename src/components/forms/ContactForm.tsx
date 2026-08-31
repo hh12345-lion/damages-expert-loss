@@ -5,8 +5,8 @@ import { useRouter } from "next/navigation";
 import { SITE_EMAIL } from "@/lib/site";
 
 /**
- * POST /api/submit-lead → Lead_notification_url (n8n webhook).
- * @see Lead_notification_setup.md
+ * Webhook primary (/api/submit-lead), then soft-fail Sheets + email (/api/contact)
+ * on one shared tab with Form Type.
  */
 export function ContactForm() {
   const router = useRouter();
@@ -33,25 +33,31 @@ export function ContactForm() {
     }
 
     try {
-      const res = await fetch("/api/submit-lead", {
+      const webhookRes = await fetch("/api/submit-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(leadPayload),
       });
 
-      if (res.ok) {
-        router.push("/thank-you");
+      if (!webhookRes.ok) {
+        const body = await webhookRes.json().catch(() => null);
+        setStatus("error");
+        setErrorMessage(
+          webhookRes.status === 503
+            ? (body?.message ??
+                "Lead delivery is not configured. Set Lead_notification_url in Netlify.")
+            : "Something went wrong. Please try again or email us directly."
+        );
         return;
       }
 
-      const body = await res.json().catch(() => null);
-      setStatus("error");
-      setErrorMessage(
-        res.status === 503
-          ? (body?.message ??
-              "Lead delivery is not configured. Set Lead_notification_url in Netlify.")
-          : "Something went wrong. Please try again or email us directly."
-      );
+      void fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(leadPayload),
+      }).catch(() => {});
+
+      router.push("/thank-you");
     } catch {
       setStatus("error");
       setErrorMessage("Something went wrong. Please try again or email us directly.");

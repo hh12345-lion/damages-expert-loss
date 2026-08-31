@@ -1,41 +1,21 @@
 import { NextResponse } from "next/server";
-import { isGoogleSheetsConfigured } from "@/lib/google-sheets";
 import { notifyLeadWebhook } from "@/lib/leadNotification";
-import { appendLeadToSheet, parseLeadBody } from "@/lib/lead-submission";
-
-async function softFailAppendSheet(
-  lead: NonNullable<ReturnType<typeof parseLeadBody>>,
-  context: string
-): Promise<void> {
-  if (!isGoogleSheetsConfigured()) return;
-
-  try {
-    await appendLeadToSheet(lead);
-  } catch (err) {
-    console.error("Google Sheets error:", {
-      context,
-      message: err instanceof Error ? err.message : "Unknown error",
-      sheetId: `${process.env.GOOGLE_SHEET_ID?.slice(0, 8)}...`,
-      tab: process.env.GOOGLE_SHEET_TAB_NAME,
-      timestamp: new Date().toISOString(),
-    });
-  }
-}
+import { parseLeadBody } from "@/lib/lead-submission";
+import { getSiteDomain } from "@/lib/seo";
 
 /**
- * Webhook is the primary lead path.
- * Sheets: one shared GOOGLE_SHEET_TAB_NAME + Form Type; soft-fail only.
+ * Webhook-only lead path (primary).
+ * Sheets + email soft-fail via /api/contact (shared tab + Form Type).
  */
 export async function POST(request: Request) {
   const webhookUrl =
     process.env.Lead_notification_url || process.env.LEAD_NOTIFICATION_URL;
-  const sheetsConfigured = isGoogleSheetsConfigured();
 
-  if (!webhookUrl?.trim() && !sheetsConfigured) {
+  if (!webhookUrl?.trim()) {
     return NextResponse.json(
       {
-        error: "NOT_CONFIGURED",
-        message: "Set Lead_notification_url and/or Google Sheets env vars.",
+        error: "WEBHOOK_MISSING",
+        message: "Lead_notification_url / LEAD_NOTIFICATION_URL is not set.",
       },
       { status: 503 }
     );
@@ -56,19 +36,16 @@ export async function POST(request: Request) {
     );
   }
 
-  if (webhookUrl?.trim()) {
-    const webhookOk = await notifyLeadWebhook(lead, webhookUrl);
-    if (!webhookOk) {
-      return NextResponse.json(
-        { error: "Failed to deliver lead" },
-        { status: 502 }
-      );
-    }
-
-    await softFailAppendSheet(lead, "submit-lead");
-    return NextResponse.json({ ok: true });
+  const webhookOk = await notifyLeadWebhook(lead, webhookUrl);
+  if (!webhookOk) {
+    return NextResponse.json(
+      { error: "Failed to deliver lead" },
+      { status: 502 }
+    );
   }
 
-  await softFailAppendSheet(lead, "submit-lead-sheets-only");
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({
+    ok: true,
+    domain: getSiteDomain(),
+  });
 }
