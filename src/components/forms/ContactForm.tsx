@@ -5,8 +5,7 @@ import { useRouter } from "next/navigation";
 import { SITE_EMAIL } from "@/lib/site";
 
 /**
- * Webhook primary (/api/submit-lead), then soft-fail Sheets + email (/api/contact)
- * on one shared tab with Form Type.
+ * POST /api/submit-lead → n8n webhook (required) + Google Sheets (soft-fail, same request).
  */
 export function ContactForm() {
   const router = useRouter();
@@ -33,29 +32,23 @@ export function ContactForm() {
     }
 
     try {
-      const webhookRes = await fetch("/api/submit-lead", {
+      const res = await fetch("/api/submit-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(leadPayload),
       });
 
-      if (!webhookRes.ok) {
-        const body = await webhookRes.json().catch(() => null);
+      if (!res.ok) {
+        const body = await res.json().catch(() => null);
         setStatus("error");
         setErrorMessage(
-          webhookRes.status === 503
+          res.status === 503
             ? (body?.message ??
                 "Lead delivery is not configured. Set Lead_notification_url in Netlify.")
             : "Something went wrong. Please try again or email us directly."
         );
         return;
       }
-
-      void fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(leadPayload),
-      }).catch(() => {});
 
       router.push("/thank-you");
     } catch {

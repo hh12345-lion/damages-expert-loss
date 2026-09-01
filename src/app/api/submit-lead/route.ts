@@ -1,11 +1,15 @@
 import { NextResponse } from "next/server";
 import { notifyLeadWebhook } from "@/lib/leadNotification";
 import { parseLeadBody } from "@/lib/lead-submission";
+import {
+  appendContactToSheet,
+  writeSubmissionToSheetSafely,
+} from "@/lib/sheetSubmissions";
 import { getSiteDomain } from "@/lib/seo";
 
 /**
- * Webhook-only lead path (primary).
- * Sheets + email soft-fail via /api/contact (shared tab + Form Type).
+ * Webhook is required; Google Sheets is soft-fail in the same request
+ * so navigation cannot abort a separate fire-and-forget call.
  */
 export async function POST(request: Request) {
   const webhookUrl =
@@ -43,6 +47,11 @@ export async function POST(request: Request) {
       { status: 502 }
     );
   }
+
+  await writeSubmissionToSheetSafely(
+    () => appendContactToSheet(lead),
+    "contact"
+  );
 
   return NextResponse.json({
     ok: true,

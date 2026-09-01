@@ -45,10 +45,17 @@ export async function writeSubmissionToSheetSafely(
   writer: () => Promise<void>,
   context: string
 ): Promise<void> {
-  if (!isGoogleSheetsConfigured()) return;
+  if (!isGoogleSheetsConfigured()) {
+    console.warn("Google Sheets skipped:", {
+      context,
+      reason: "GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_PRIVATE_KEY, or GOOGLE_SHEET_ID not set",
+    });
+    return;
+  }
 
   try {
     await writer();
+    console.log("Google Sheets row appended:", { context, brand: BRAND_NAME });
   } catch (error: unknown) {
     const err = error as {
       message?: string;
