@@ -8,4 +8,4 @@ Disallow: /private/
 Disallow: /.netlify/
 Disallow: /thank-you
 
-Sitemap: https://www.damagesexpertwitness.co.uk/sitemap.xml
+Sitemap: https://damagesexpertwitness.co.uk/sitemap.xml

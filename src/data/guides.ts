@@ -56,7 +56,7 @@ const guides: GuidePage[] = [
     relatedLinks: [
       { href: "/case-types/loss-of-earnings-personal-injury", label: "Loss of Earnings Case Type" },
       { href: "/services#loss-of-earnings", label: "Loss of Earnings Service" },
-      { href: "/glossary/ogden-tables", label: "Glossary: Ogden Tables" },
+      { href: "/glossary#ogden-tables", label: "Glossary: Ogden Tables" },
       { href: "/types-of-damages", label: "Types of Damages" },
     ],
   },
@@ -113,7 +113,7 @@ const guides: GuidePage[] = [
       },
     ],
     relatedLinks: [
-      { href: "/glossary/schedule-of-loss", label: "Glossary: Schedule of Loss" },
+      { href: "/glossary#schedule-of-loss", label: "Glossary: Schedule of Loss" },
       { href: "/services#loss-of-earnings", label: "Loss of Earnings Service" },
       { href: "/case-types/clinical-negligence-quantum", label: "Clinical Negligence Quantum" },
       { href: "/how-to-instruct", label: "How to Instruct an Expert" },
@@ -174,7 +174,7 @@ const guides: GuidePage[] = [
     relatedLinks: [
       { href: "/practice-areas/commercial-damages", label: "Commercial Damages Practice Area" },
       { href: "/services#commercial-loss-profits", label: "Commercial Lost Profits Service" },
-      { href: "/glossary/hadley-v-baxendale-1854", label: "Glossary: Hadley v Baxendale" },
+      { href: "/glossary#hadley-v-baxendale-1854", label: "Glossary: Hadley v Baxendale" },
       { href: "/case-types/commercial-contract-damages", label: "Commercial Contract Damages" },
     ],
   },
@@ -234,7 +234,7 @@ const guides: GuidePage[] = [
       { href: "/practice-areas/international-arbitration", label: "International Arbitration Practice Area" },
       { href: "/services#international-arbitration-quantum", label: "Arbitration Quantum Service" },
       { href: "/case-types/investment-treaty-damages", label: "Investment Treaty Damages" },
-      { href: "/glossary/chorzow-factory-standard", label: "Glossary: Chorzów Factory" },
+      { href: "/glossary#chorzow-factory-standard", label: "Glossary: Chorzów Factory" },
     ],
   },
   {
@@ -349,7 +349,7 @@ const guides: GuidePage[] = [
       },
     ],
     relatedLinks: [
-      { href: "/glossary/single-joint-expert-sje", label: "Glossary: Single Joint Expert" },
+      { href: "/glossary#single-joint-expert-sje", label: "Glossary: Single Joint Expert" },
       { href: "/how-to-instruct", label: "How to Instruct an Expert" },
       { href: "/qualifications", label: "Expert Qualifications" },
       { href: "/glossary#discount-rate", label: "Glossary: Discount Rate" },

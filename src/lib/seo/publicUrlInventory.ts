@@ -2,9 +2,9 @@ import { caseTypeSlugs } from "@/data/case-types";
 import { practiceAreaSlugs } from "@/data/practice-areas";
 import { guideSlugs } from "@/data/guides";
 
-export const CANONICAL_HOST =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://www.damagesexpertwitness.co.uk";
+import { getPublicSiteUrl } from "@/lib/site";
+
+export const CANONICAL_HOST = getPublicSiteUrl();
 
 export const APP_STATIC_PATHS = [
   "/",

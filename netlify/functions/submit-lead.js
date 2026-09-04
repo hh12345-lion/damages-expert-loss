@@ -7,7 +7,7 @@ const BRAND_NAME = "Damages Expert Witness";
 function getSiteDomain() {
   const url =
     process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://www.damagesexpertwitness.co.uk";
+    "https://damagesexpertwitness.co.uk";
 
   try {
     const hostname = new URL(url.replace(/\/$/, "")).hostname;
