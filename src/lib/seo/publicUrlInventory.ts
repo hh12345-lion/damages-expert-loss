@@ -1,6 +1,7 @@
 import { caseTypeSlugs } from "@/data/case-types";
 import { practiceAreaSlugs } from "@/data/practice-areas";
 import { guideSlugs } from "@/data/guides";
+import { blogSlugs } from "@/data/blog";
 
 import { getPublicSiteUrl } from "@/lib/site";
 
@@ -16,6 +17,7 @@ export const APP_STATIC_PATHS = [
   "/qualifications",
   "/how-to-instruct",
   "/guides",
+  "/blog",
   "/glossary",
   "/cookies",
 ] as const;
@@ -47,6 +49,7 @@ export function buildPublicUrlInventory(): PublicUrlInventory {
     ...practiceAreaSlugs.map((slug) => `/practice-areas/${slug}`),
     ...caseTypeSlugs.map((slug) => `/case-types/${slug}`),
     ...guideSlugs.map((slug) => `/guides/${slug}`),
+    ...blogSlugs.map((slug) => `/blog/${slug}`),
   ];
 
   const allPaths = [
@@ -83,7 +86,9 @@ export function getSitemapPriority(path: string): number {
   }
   if (path.startsWith("/case-types/")) return 0.88;
   if (path === "/guides") return 0.87;
+  if (path === "/blog") return 0.87;
   if (path.startsWith("/guides/")) return 0.8;
+  if (path.startsWith("/blog/")) return 0.8;
   if (path === "/glossary") return 0.75;
   if (path === "/cookies") return 0.5;
   return 0.7;

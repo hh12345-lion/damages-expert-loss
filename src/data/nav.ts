@@ -50,6 +50,7 @@ export const navTypesOfDamagesLinks = [
 /** Resources dropdown - desktop nav */
 export const navResourcesLinks = [
   { href: "/guides", label: "Solicitor Guides" },
+  { href: "/blog", label: "Blog" },
   { href: "/how-to-instruct", label: "How to Instruct" },
   { href: "/qualifications", label: "Qualifications" },
 ];
@@ -129,6 +130,7 @@ export const headerNavLinks = [
   { href: "/case-types", label: "Case Types" },
   { href: "/types-of-damages", label: "Damages Guide" },
   { href: "/guides", label: "Guides" },
+  { href: "/blog", label: "Blog" },
 ];
 
 /** Grouped links for the full-width topics panel */
@@ -146,6 +148,7 @@ export const headerTopicGroups = [
     title: "Resources",
     links: [
       { href: "/guides", label: "Solicitor guides" },
+      { href: "/blog", label: "Blog" },
       { href: "/how-to-instruct", label: "How to instruct" },
       { href: "/qualifications", label: "Qualifications" },
       { href: "/glossary", label: "Glossary" },
@@ -168,6 +171,7 @@ export const footerRibbonLinks = [
   { href: "/case-types", label: "Case Types" },
   { href: "/types-of-damages", label: "Damages Guide" },
   { href: "/guides", label: "Guides" },
+  { href: "/blog", label: "Blog" },
   { href: "/glossary", label: "Glossary" },
   { href: "/qualifications", label: "Qualifications" },
   { href: "/how-to-instruct", label: "How to Instruct" },
