@@ -23,6 +23,7 @@ export const LEAD_SHEET_HEADERS = [
 export interface LeadSubmission extends LeadNotificationInput {
   organisation?: string;
   description?: string;
+  message?: string;
 }
 
 function sanitize(str: string): string {
@@ -60,13 +61,25 @@ export function parseLeadBody(body: unknown): LeadSubmission | null {
       ? b.formType
       : "contact";
 
+  const freeText = opt(
+    b.message ??
+      b.Message ??
+      b.description ??
+      b.enquiry ??
+      b.details ??
+      b.summary ??
+      b.notes ??
+      b.matter
+  );
+
   return {
     fullName,
     email,
     phone: b.phone != null ? String(b.phone).trim() : "",
     formType,
     organisation: opt(b.organisation),
-    description: opt(b.description ?? b.message),
+    description: freeText || opt(b.description ?? b.message),
+    message: freeText,
   };
 }
 

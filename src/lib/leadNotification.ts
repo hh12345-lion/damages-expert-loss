@@ -8,6 +8,8 @@ export interface LeadNotificationInput {
   email: string;
   phone: string;
   formType?: "contact" | "instruct";
+  /** Free-text enquiry body — always sent to n8n as `message`. */
+  message?: string;
 }
 
 function sanitize(str: string): string {
@@ -25,6 +27,20 @@ export function parseLeadNotificationBody(
 
   if (!fullName || !email) return null;
 
+  const freeText = sanitize(
+    String(
+      b.message ??
+        b.Message ??
+        b.description ??
+        b.enquiry ??
+        b.details ??
+        b.summary ??
+        b.notes ??
+        b.matter ??
+        ""
+    )
+  );
+
   return {
     fullName,
     email,
@@ -33,6 +49,7 @@ export function parseLeadNotificationBody(
       b.formType === "instruct" || b.formType === "contact"
         ? b.formType
         : "contact",
+    message: freeText,
   };
 }
 
@@ -44,6 +61,7 @@ export function buildWebhookPayload(lead: LeadNotificationInput) {
     "Phone Number": lead.phone || "",
     "Brand name": BRAND_NAME,
     domain: getSiteDomain(),
+    message: lead.message ?? "",
   };
 }
 
