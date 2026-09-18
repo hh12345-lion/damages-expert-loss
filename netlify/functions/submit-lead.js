@@ -17,6 +17,32 @@ function getSiteDomain() {
   }
 }
 
+/** Map site-specific free-text field names to universal `message`. */
+function resolveLeadMessage(body) {
+  if (!body || typeof body !== "object") return "";
+  const keys = [
+    "message",
+    "Message",
+    "description",
+    "enquiry",
+    "details",
+    "summary",
+    "notes",
+    "matter",
+    "caseSummary",
+    "additionalInfo",
+    "additional_info",
+    "caseDetails",
+    "enquiryDetails",
+  ];
+  for (const key of keys) {
+    if (body[key] != null && String(body[key]).trim()) {
+      return String(body[key]).trim();
+    }
+  }
+  return "";
+}
+
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
     return json(405, { error: "Method not allowed" });
@@ -43,6 +69,7 @@ exports.handler = async (event) => {
     body.phone != null && body.phone !== undefined
       ? String(body.phone).trim()
       : "";
+  const message = resolveLeadMessage(body);
 
   if (!fullName || !email) {
     return json(400, { error: "fullName and email are required" });
@@ -54,6 +81,7 @@ exports.handler = async (event) => {
     "Phone Number": phone,
     "Brand name": BRAND_NAME,
     domain: getSiteDomain(),
+    message,
   };
 
   try {
