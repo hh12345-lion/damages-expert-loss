@@ -1,22 +1,3 @@
-/**
- * POST /api/submit-lead (via netlify.toml redirect) → n8n webhook.
- * @see Lead_notification_setup.md
- */
-const BRAND_NAME = "Damages Expert Witness";
-
-function getSiteDomain() {
-  const url =
-    process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://damagesexpertwitness.co.uk";
-
-  try {
-    const hostname = new URL(url.replace(/\/$/, "")).hostname;
-    return hostname.replace(/^www\./i, "");
-  } catch {
-    return "damagesexpertwitness.co.uk";
-  }
-}
-
 /** Map site-specific free-text field names to universal `message`. */
 function resolveLeadMessage(body) {
   if (!body || typeof body !== "object") return "";
